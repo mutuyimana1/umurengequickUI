@@ -1,0 +1,41 @@
+.header{
+    background-image: url("../assets/images/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-orientation: 10deg;
+    height: 300px;
+}
+.header img{
+    /* padding-top: 50px; */
+    margin-top: 50px;
+    padding-left: 30px;
+}
+
+.header h1{
+    color: rgb(75, 231, 14);
+    font-size: 45px;
+    margin-left: 450px;
+    margin-top: -65px;
+    font-family:mixed;
+    font-weight:bold;
+}
+.header h2{
+    color:rgb(42, 123, 245);
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: 455px;
+    margin-top: -40px;
+    font-family: Racing Sans One;
+    font-style: italic;
+    font-weight: bold;
+}
+a{
+    color: rgb(255, 255, 255);
+    float: right;
+    padding-right: 60px;
+    font-size: 18px;
+    padding-top: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    /* margin-left: 100px; */
+}

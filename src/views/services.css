@@ -1,0 +1,79 @@
+.servicecontiner{
+    background-image: url("../assets/images/house3.jpeg");
+    height: 130vh;
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+.page-background{
+    background-color: #6ec0fabb;
+    height: 10vh;
+    margin: 100px 60px 50px;
+    border-radius: 34px;
+}
+.page-background h3{
+    padding: 20px 50px 50px;
+}
+.card-container{
+    display: flex;
+    opacity: 0;
+    animation-name: between;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    transition-duration: 1s;
+}
+@keyframes between{
+    0% {opacity:0}
+    100% {opacity:1}
+
+}
+.card{
+    background-color: #ffff;
+    width: 280px;
+    height: 210px;
+    margin-left: 50px;
+    border-radius: 14px;
+    box-shadow: 3px 3px 5px;
+    transition-property: all;
+    transition-duration: 2s;
+}
+.card:hover{
+    background-color: rgb(75,231,14);
+    transition:2s;
+    color: white;
+    /* transform:rotateX(180deg) */
+    
+}
+.card-content{
+    padding-left: 15px;
+    padding-top: -3px;
+    text-align: center;
+    font-size: 20px;
+    animation-name: myanimation;
+    animation-duration: 10s;
+    animation-delay:3s;
+}
+@keyframes myanimation{
+    0% {background-color: white }
+    /* 25% {background-color: gray} */
+    50% {background-color: #6ec0fabb}
+    /* 75% {background-color: rgb(121, 179, 121)}
+    100% {background-color: white} */
+}
+.card-container2{
+    margin-top: 10px;
+    display: flex;
+    opacity: 0;
+    animation-name: between;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    transition-duration: 1s;
+}
+@keyframes between{
+    0% {opacity:0}
+    100% {opacity:1}
+
+}

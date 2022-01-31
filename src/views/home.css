@@ -1,0 +1,44 @@
+.home-igenamigambi{
+    background-color: rgb(255, 255, 255);
+    background-size: fixed;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px;
+    width: 300px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top:50px
+}
+.container{
+    display: flex;
+}
+.rightside{
+    margin-left: 110px;
+    margin-right: 20px;
+}
+.leftside{
+    margin-left: 30px;
+}
+button{
+    margin-left: 300px;
+    margin-top: 50px;
+    background-clip: border-box;
+    background-color: rgb(42, 123, 245);
+    padding: 10px;
+    border-radius: 6px;
+
+    animation-name: button;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    transition-duration: 1s;
+
+
+}
+@keyframes button{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+button:hover{
+    transform:rotateY(180deg)
+}
