@@ -1,15 +1,17 @@
 
 import logo from "../assets/images/logo.png";
 import "./header.css";
-
-
+import Signup from "./signup"
+import {useState} from "react"
 const Header = () => {
-  
+  const [buttonPopup, setButtonPopup] = useState(false);
 
   return (
     <>
-    
-      <div className="header">
+    <div className="app">
+      <main>
+        {/* <button onClick={()=>setButtonPopup(true)}>Injira</button> */}
+        <div className="header">
         <img src={logo} height="70px" width={"100px"} />
         <h1> UMURENGE QUICK</h1>
         <h2>We Starve To Serve</h2>
@@ -17,7 +19,7 @@ const Header = () => {
         <div ClassName="navbar-fix">
           <a href="/#"> Kora Gahunda</a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="#">Kwinjira</a>
+          <a href="#" onClick={()=>setButtonPopup(true)}>Kwinjira</a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="/#"> Iyandikishe </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -27,6 +29,14 @@ const Header = () => {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>
+        
+      </main>
+<Signup trigger={buttonPopup} setTrigger={setButtonPopup}>
+          <h3>Login pages</h3>
+          <p>Uzuzamo amakuu yawe</p>
+        </Signup>
+    </div>
+     
 
       
     </>

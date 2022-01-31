@@ -13,7 +13,7 @@ import {Modal} from "antd";
 const Home=()=>{
     return(
         <>
-        <Modal visible={true}> hashjdhajsda s</Modal>
+      
         <HomeLayout>
         <div style={{ marginBottom:"100px"}}className="container">
             {/* <Carousel> */}
