@@ -18,13 +18,14 @@
 .leftside{
     margin-left: 30px;
 }
-button{
-    margin-left: 300px;
+.search{
+    margin-left: 600px;
     margin-top: 50px;
     background-clip: border-box;
     background-color: rgb(42, 123, 245);
     padding: 10px;
     border-radius: 6px;
+    width: 125px;
 
     animation-name: button;
     animation-duration: 3s;
@@ -39,6 +40,6 @@ button{
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-button:hover{
+.search:hover{
     transform:rotateY(180deg)
 }
