@@ -1,0 +1,20 @@
+.leaders{    
+   margin: 20px;   
+   height: 55vh;
+   width: 40%;
+  border: 1px solid black;
+  padding: 20px; 
+  font-size: larger;
+}
+.leaders button{
+   float: right;
+   margin: 20px;
+   color: green;
+}
+.profile{
+   display: flex;
+   width :20%;
+   margin: 20px;
+  height: 20vh;
+  font-size:x-large;   
+}
