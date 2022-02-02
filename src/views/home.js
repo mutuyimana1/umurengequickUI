@@ -13,8 +13,7 @@ import {Modal} from "antd";
 const Home=()=>{
     return(
         <>
-        
-        <HomeLayout>
+      <HomeLayout>
         <div style={{ marginBottom:"100px"}}className="container">
             {/* <Carousel> */}
                 
