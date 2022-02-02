@@ -1,0 +1,50 @@
+[
+   {
+    "name":"MUKANTABANA Beatrice",
+       "title":"Umuyobozi nshingabikorwa",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+       "address":"KICUKIRO",
+       "phone":"+25078678475",
+       "profile":[" https://media.istockphoto.com/photos/african-american-businesswoman-picture-id497653018?k=20&m=497653018&s=612x612&w=0&h=w4FmquM3qyrNLAX52h31F5qpLkrPfD_DpelSOpjm16I="]
+   }, 
+   {
+    "name":"MUNYAKABERA Faustin",
+       "title":"Noteri",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+       "address":"KICUKIRO",
+       "phone":"+2507866667",
+       "profile":["https://upload.wikimedia.org/wikipedia/commons/9/90/Abiy_Ahmed_with_LI_Yong_2018_%28cropped%29.jpeg"]
+   }, 
+   {
+    "name":"HABIMANA Joseph",
+       "title":"Veterineri",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+       "address":"KICUKIRO",
+       "phone":"+250786576575",
+       "profile":["data:image/jpeg;base64,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"]
+   }, 
+   {
+    "name":"HAKIZIMANA Jean Baptiste",
+       "title":"Imibereho myiza",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+       "address":"KICUKIRO",
+       "phone":"+250789579665",
+       "profile":["https://image.shutterstock.com/image-photo/confident-black-business-man-stylish-260nw-403315558.jpg"]
+   }, 
+   {
+    "name":"HAKIZIMANA Alexis",
+       "title":"Ushinzwe uburezi",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+       "address":"KICUKIRO",
+       "phone":"+2507889766",
+       "profile":["https://p0.pikist.com/photos/884/400/black-professional-a-black-man-on-a-suit-young-executive-worker-manager-adult-businessman-portrait.jpg"]
+   }, 
+   {
+    "name":"UMUHOZA Janet",
+       "title":"Njyanama ",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+       "address":"KICUKIRO",
+       "phone":"+250789989990",
+       "profile":["https://thumbs.dreamstime.com/b/professional-black-businesswoman-professional-businesswoman-posing-portrait-session-119443616.jpg"]
+   }
+]
