@@ -1,0 +1,30 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
+.home-container{
+    text-align: center;
+    padding-left: 40px;
+    padding-top: 50px;
+    text-decoration: bold;
+}
+
+.home-container button{
+    background-color: rgb(146, 145, 145);
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    margin-left: 180px;
+    margin-bottom: 5000px;
+}
+.kkkk{
+    display: flex;
+    margin-left: 310px;
+    
+}
+.hhh{
+    margin-left: 50px;
+    height: 500px;
+}
+

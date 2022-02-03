@@ -1,6 +1,9 @@
 import React from "react";
 import "./footer.css"
-import Logo from "../assets/images/logo.png"
+import Logo from "../assets/images/logo.png";
+
+
+
 const Footer = () =>{
     return(
         <div style={{position:"relative", backgroundColor:"gray",minHeight:"60vh", marginTop:"20px"}}>
