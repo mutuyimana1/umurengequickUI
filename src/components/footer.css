@@ -1,6 +1,8 @@
 *{
-    margin: 0;
-    padding: 0;
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+
 }
 .custom-shape-divider-bottom-1643320600 {
     position: absolute;
@@ -21,4 +23,7 @@
 
 .custom-shape-divider-bottom-1643320600 .shape-fill {
     fill: #FFFFFF;
+}
+.footer{
+    width: 100%;
 }

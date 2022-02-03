@@ -1,3 +1,8 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
 .servicecontiner{
     background-image: url("../assets/images/house3.jpeg");
     height: 130vh;
@@ -15,6 +20,8 @@
 }
 .card-container{
     display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     opacity: 0;
     animation-name: between;
     animation-duration: 3s;
@@ -22,6 +29,7 @@
     animation-fill-mode: forwards;
     transition-property: all;
     transition-duration: 1s;
+    padding:0% 6%;
 }
 @keyframes between{
     0% {opacity:0}
@@ -30,9 +38,9 @@
 }
 .card{
     background-color: #ffff;
-    width: 280px;
+    width: 25%;
     height: 210px;
-    margin-left: 50px;
+    margin: 10px;
     border-radius: 14px;
     box-shadow: 3px 3px 5px;
     transition-property: all;
@@ -60,17 +68,6 @@
     50% {background-color: #6ec0fabb}
     /* 75% {background-color: rgb(121, 179, 121)}
     100% {background-color: white} */
-}
-.card-container2{
-    margin-top: 10px;
-    display: flex;
-    opacity: 0;
-    animation-name: between;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    transition-property: all;
-    transition-duration: 1s;
 }
 @keyframes between{
     0% {opacity:0}
