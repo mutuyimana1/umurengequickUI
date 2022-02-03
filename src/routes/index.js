@@ -12,6 +12,7 @@ import AllBookings from "../views/dashboard/userDashboard";
 const Index = () => {
   const currentUrl = useLocation.pathname;
 
+
   return (
     <Routes>
     <Route path="/" element={<Home />} />
@@ -27,3 +28,4 @@ const Index = () => {
   );
 };
 export default Index;
+
