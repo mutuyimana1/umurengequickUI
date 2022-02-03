@@ -28,7 +28,7 @@ const Header = () => {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="/serivisi" style={{color:"rgb(255, 255, 255)"}}> Servisi </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="/home" style={{color:"rgb(255, 255, 255)"}}> Ahabanza </a>
+          <a href="/" style={{color:"rgb(255, 255, 255)"}}> Ahabanza </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>
