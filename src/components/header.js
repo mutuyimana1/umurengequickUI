@@ -2,14 +2,14 @@ import React from "react";
 import logo from "../assets/images/logo.png";
 import "./header.css";
 
-import { Modal, Form, Input, Button } from "antd";
+
 import { useNavigate } from "react-router-dom";
 
 
-import Signup from "./signup"
+
 import {useState} from "react"
 import 'antd/dist/antd.css';
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button, Checkbox, Modal } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 const Header = () => {
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -44,7 +44,7 @@ const Header = () => {
       </div>
         
       </main>
-<Signup trigger={buttonPopup} setTrigger={setButtonPopup}>
+
 <Form
       name="normal_login"
       className="login-form"
@@ -99,7 +99,7 @@ const Header = () => {
       </div>
     </Form>
           
-        </Signup>
+        
     </div>
      
 

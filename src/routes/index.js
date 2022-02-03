@@ -9,6 +9,7 @@ import AllBookings from "../views/dashboard/userDashboard";
 
 
 
+
 const Index=()=>{
 const currentUrl=useLocation.pathname
 
@@ -20,6 +21,8 @@ return(
 <Route path='/date' element={<DateAndTime/>} />
 <Route path='/serivisi' element={<Services/>}/>
 <Route path='/userboard' element={<AllBookings/>} />
+
+
 
 </Routes> 
 )
