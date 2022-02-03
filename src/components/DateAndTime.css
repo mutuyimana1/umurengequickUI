@@ -1,0 +1,26 @@
+
+
+.appoint-div{
+    background: red;
+    height: 100vh;
+}
+table tr, td{
+    border:1px solid black;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+   }
+   table{
+       width: 30%;
+   }
+   /* table button{
+    
+   } */
+   button{
+       float: right;
+   } 
+  
+  .cont2 {
+    
+    color:  red;
+  }

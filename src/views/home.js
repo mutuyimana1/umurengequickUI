@@ -44,6 +44,7 @@ const Home=()=>{
       onSearch={onSearch}
     />
 
+      <HomeLayout>
         <div style={{ marginBottom:"100px"}}className="container">
             {/* <Carousel> */}
       
