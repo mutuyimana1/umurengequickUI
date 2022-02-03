@@ -11,9 +11,6 @@ function signup(props) {
   </div>
   ):"";
 }
-const onFinish = (values) => {
-  console.log('Received values of form: ', values);
-};
 
 export default signup;
 
