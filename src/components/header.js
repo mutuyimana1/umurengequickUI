@@ -15,12 +15,14 @@ const Header = () => {
       <main>
         {/* <button onClick={()=>setButtonPopup(true)}>Injira</button> */}
         <div className="header">
-        <img src={logo} height="70px" width={"100px"} />
+        <img src={logo} height="100px" width={"200px"} />
         <h1> UMURENGE QUICK</h1>
         <h2>We Starve To Serve</h2>
         {/* <div ClassName="navbar"> */}
         <div ClassName="navbar-fix">
           <a href="/#" style={{color:"rgb(255, 255, 255)"}}> Kora Gahunda</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/contactUs" style={{color:"rgb(255, 255, 255)"}}> Twandikire </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="#" style={{color:"rgb(255, 255, 255)"}} onClick={()=>setButtonPopup(true)}>Kwinjira</a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

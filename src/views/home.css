@@ -1,3 +1,8 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
 .home-igenamigambi{
     background-color: rgb(255, 255, 255);
     background-size: fixed;
@@ -10,6 +15,7 @@
 }
 .container{
     display: flex;
+    padding-bottom: 10px;
 }
 .rightside{
     margin-left: 110px;

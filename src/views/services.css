@@ -1,3 +1,8 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
 .servicecontiner{
     background-image: url("../assets/images/house3.jpeg");
     height: 130vh;
