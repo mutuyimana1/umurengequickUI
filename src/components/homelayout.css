@@ -1,0 +1,12 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.homeLayout{
+    /* background-image: url("../assets/images/teamWork2.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}

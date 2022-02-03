@@ -1,7 +1,14 @@
 import React from "react";
 import "./footer.css"
+
 import Logo from "../assets/images/logo.png"
 import {InstagramOutlined,LinkedinOutlined,WhatsAppOutlined,FacebookOutlined} from "@ant-design/icons"
+
+
+
+
+
+
 const Footer = () =>{
     return(
         <div className="footer">

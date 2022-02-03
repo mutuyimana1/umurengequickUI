@@ -1,15 +1,14 @@
 import React from "react";
 import Header from "./header";
-import Footer from "./footer"
+import Footer from "./footer";
+import "./homelayout.css"
 
 const HomeLayout = ({children}) => {
  return (
      <>
     <Header></Header>
-<div className=" home-container">
-     <div > {children}</div>
-    <Footer></Footer> 
-</div>
+     <div style={{width:"100%"}} className="homeLayout"> {children}</div>
+<Footer></Footer> 
 </>
  )
 }

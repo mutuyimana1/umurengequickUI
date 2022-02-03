@@ -1,6 +1,11 @@
-
+import React from "react";
 import logo from "../assets/images/logo.png";
 import "./header.css";
+
+import { Modal, Form, Input, Button } from "antd";
+import { useNavigate } from "react-router-dom";
+
+
 import Signup from "./signup"
 import {useState} from "react"
 import 'antd/dist/antd.css';
@@ -14,15 +19,21 @@ const Header = () => {
     <div className="app">
       <main>
         {/* <button onClick={()=>setButtonPopup(true)}>Injira</button> */}
-        <div className="header">
-        <img src={logo} height="70px" width={"100px"} />
+        <div className="header
+        <img src={logo} height="100px" width={"200px"} />
         <h1> UMURENGE QUICK</h1>
         <h2>We Starve To Serve</h2>
         {/* <div ClassName="navbar"> */}
         <div ClassName="navbar-fix">
           <a href="/#" style={{color:"rgb(255, 255, 255)"}}> Kora Gahunda</a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/contactUs" style={{color:"rgb(255, 255, 255)"}}> Twandikire </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
           <a href="#" style={{color:"rgb(255, 255, 255)"}} onClick={()=>setButtonPopup(true)}>Kwinjira</a>
+
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="/#" style={{color:"rgb(255, 255, 255)"}}> Iyandikishe </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
