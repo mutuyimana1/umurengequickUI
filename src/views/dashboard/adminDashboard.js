@@ -10,6 +10,11 @@ import { Drawer } from "antd";
 
 const Column = [
   {
+    title: 'EMAIL',
+    dataIndex: 'email',
+    key: 'email',
+  },
+  {
     title: 'FIRST NAME',
     dataIndex: 'firstName',
     key: 'firstname',
@@ -19,31 +24,19 @@ const Column = [
     dataIndex: 'lastName',
     key: 'lastname',
   },
-  {
-    title: 'EMAIL',
-    dataIndex: 'email',
-    key: 'email',
-  },
+  
   {
     title: 'ADDRESS',
     dataIndex: 'address',
     key: 'address',
   },
-  {
-    title: 'ID',
-    dataIndex: 'Identification_card',
-    key: 'id',
-  },
+  
   {
     title: 'PHONE NUMBER',
     dataIndex: 'phone_number',
     key: 'phone_number',
   },
-  {
-    title: 'GENDER',
-    dataIndex: 'gender',
-    key: 'gender',
-  },
+  
   {
     title: 'Action',
     dataIndex: 'action',
@@ -59,11 +52,7 @@ const Column = [
 
 ];
 const Column1 = [
-  {
-    title: 'DESCRIPTION / RESPONSIBILITY',
-    dataIndex: 'description',
-    key: 'first-name',
-  },
+  
   {
     title: 'TITLE',
     dataIndex: 'title',

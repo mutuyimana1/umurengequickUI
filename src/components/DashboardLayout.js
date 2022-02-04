@@ -4,6 +4,8 @@ import 'antd/dist/antd.css';
 import "./dashstyle.css"
 import { Link } from "react-router-dom";
 import { Layout, Menu } from 'antd';
+import HomeLayout from "../components/homelayout";
+
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
@@ -23,16 +25,17 @@ const Dashlayout = ({ children }) => {
     }
 
     return(
+      <HomeLayout>
         <Layout>
-        <Sider trigger={null} collapsible collapsed={collapsed}>
+        <Sider  collapsible collapsed={collapsed}>
           <div className="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+          <Menu  theme ="dark"mode="inline" defaultSelectedKeys={['1']}>
             <Menu.Item key="1" icon={<UserOutlined />}>
-              <Link to ="./userDashboard"> Overview</Link>
+              <Link to ="../dashboard"> Overview</Link>
             </Menu.Item>
             <Menu.Item key="2" icon={<VideoCameraOutlined />}>
               
-            <Link to ="../dashboard/alltours"> Manage All appointment</Link>
+            <Link to ="../appointments"> Manage All appointment</Link>
             </Menu.Item>
             <Menu.Item key="3" icon={<UploadOutlined />}>
               <Link to ="../home">Logout</Link>
@@ -40,12 +43,12 @@ const Dashlayout = ({ children }) => {
           </Menu>
         </Sider>
         <Layout className="site-layout">
-          <Header className="site-layout-background" style={{ padding: 0 }}>
-            {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
-              className: 'trigger',
-              onClick: toggle,
-            })}
-          </Header>
+            {/* <Header className="site-layout-background" style={{ padding: 0 }}>
+              {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+                className: 'trigger',
+                onClick: toggle,
+              })}
+            </Header> */}
           <Content
             className="site-layout-background"
             style={{
@@ -59,6 +62,7 @@ const Dashlayout = ({ children }) => {
           </Content>
         </Layout>
       </Layout>
+      </HomeLayout>
     )
 }
 export default Dashlayout;

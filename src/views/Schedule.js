@@ -4,10 +4,12 @@ import leadersInfos from "../assets/constants/leaders.json"
 import SingleSchedule from "../components/singleschedule"
 import HomeLayout from "../components/homelayout"
 
+
 const Schedule=()=>{
    
          return(
              <HomeLayout>
+                 <h1><b>ABAYOBOZI BACU</b></h1>
             <div className="schedule-container">
                 {
                     leadersInfos.map((data)=>(<SingleSchedule leader={data} />))

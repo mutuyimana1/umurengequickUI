@@ -4,9 +4,28 @@
     "lastName":"UJENEZA",
     "email":"evelyneujeneza@gmail.com",
     
-    "address":"Rwanda",
+    "address":"Kimironko",
     "Identification_card":"1199970117085099",
     "phone_number":"+2507809083600",
     "gender":"female"
-    }
+    },
+    {
+        "firstName":"flavia",
+        "lastName":"NIRERE",
+        "email":"nirereflavia@gmail.com",
+        
+        "address":"Gikondo",
+        "Identification_card":"1199970117085119",
+        "phone_number":"+2507809083601",
+        "gender":"female"
+        },{
+            "firstName":"Alice",
+            "lastName":"MUTUYIMANA",
+            "email":"amutuyimana64@gmail.com",
+            
+            "address":"Nyamirambo",
+            "Identification_card":"1199970117115099",
+            "phone_number":"+2507809083500",
+            "gender":"female"
+            }
 ]

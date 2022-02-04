@@ -7,7 +7,9 @@ import ContactUs from "../views/contactUs";
 import DateAndTime from "../components/DateAndTime";
 import Schedule from "../views/Schedule";
 
-import AllBookings from "../views/dashboard/userDashboard";
+import AllBookings from "../views/dashboard/adminDashboard";
+import Calendar from "../components/calendar";
+import AllAPPOINTMENT from "../views/dashboard/leadersDashboard";
 
 const Index = () => {
   const currentUrl = useLocation.pathname;
@@ -23,7 +25,9 @@ const Index = () => {
       {/* <Route path='/header' element={<Header/>}/> */}
       <Route path="/contactUs" element={<ContactUs />} />
       <Route path="/header" element={<Header />} />
-      <Route path="/userboard" element={<AllBookings />} />
+      <Route path="/dashboard" element={<AllBookings />} />
+      <Route path="/calendar" element={<Calendar />} />
+      <Route path="/appointments" element={<AllAPPOINTMENT />} />
     </Routes>
   );
 };

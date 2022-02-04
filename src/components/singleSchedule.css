@@ -1,10 +1,15 @@
 .leaders{    
    margin: 20px;   
-   height: 55vh;
-   width: 40%;
+   height: 52vh;
+   width: 100%;
   border: 1px solid black;
   padding: 20px; 
-  font-size: larger;
+  font-size: x-large;
+  
+}
+.flexing{
+   display: flex;
+  
 }
 .leaders button{
    float: right;
@@ -17,4 +22,7 @@
    margin: 20px;
   height: 20vh;
   font-size:x-large;   
+}
+.calendar{
+   width:100%;
 }
