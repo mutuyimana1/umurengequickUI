@@ -22,7 +22,7 @@
     box-shadow: 0 0 5px 5px;
     width: 25%;
     height: 30vh;
-    padding: 30px;
+    padding: 50px;
     margin-left: 100px;
     margin-top:50px
     
@@ -44,14 +44,14 @@
     background-color: white;
     width: 60%;
     border-radius: 20px;
-    box-shadow: 9px 8px 3px rgb(167, 235, 11);
+    /* box-shadow: 9px 8px 3px rgb(167, 235, 11); */
     
 }
 .leftside{
 
     width: 40%;
-    border-radius: 20px;
-    box-shadow: 1px 5px 3px 1px rgb(167, 235, 11);
+    /* border-radius: 20px; */
+    /* box-shadow: 1px 5px 3px 1px rgb(167, 235, 11); */
 }
 .rightside p{
     text-align: center;

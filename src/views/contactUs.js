@@ -8,6 +8,7 @@ const ContactUs = () => {
     return(
         <>
         <HomeLayout>
+            <div className="backgroung">
             <div className="home-container">
             <div className="twandikire">
             <h1 style={{ textDecoration:"bold"}}>TWAKINDIKIRE</h1><br></br>
@@ -35,6 +36,7 @@ const ContactUs = () => {
             <textarea rows="7.5" cols="40"/><br></br><br></br><br></br><br></br>
             <button><b>Ohereza</b></button><br></br>
              </div>
+            </div>
             </div>
             </div>
         </HomeLayout>

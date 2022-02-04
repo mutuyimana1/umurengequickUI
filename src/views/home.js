@@ -6,11 +6,15 @@ import HomeLayout from "../components/homelayout";
 import paragraphPhoto from "../assets/images/image.jpg";
 import { AudioOutlined } from "@ant-design/icons";
 import { Input, Space } from "antd";
+import SampleServices from "../assets/constants/home.json";
 import ReactDOM from "react-dom";
 import "antd/dist/antd.css";
 import Carousel from "react";
 
 import { Modal } from "antd";
+import { Typography, Switch } from "antd";
+
+const { Paragraph, Text } = Typography;
 
 const { Search } = Input;
 
@@ -43,79 +47,41 @@ const Home = () => {
           {/* <Carousel> */}
 
           <br />
+          {SampleServices.map((service)=>(
 
           <div className="home-igenamigambi">
             <item>
-              <h1 style={{ fontSize: "20px" }}>Igenamigambi</h1>
-              <br></br>
-              <p1 style={{ fontSize: "17px" }}>
-                Serivisi fatizo zitangwa mu ishami ry'igenamigambi
-              </p1>
-              <br></br>
-              <br></br>
-              <br></br>
-              <p2
-                style={{
-                  fontSize: "17px",
-                  marginLeft: "100px",
-                  fontStyle: "italic",
-                  fontWeight: "bold",
-                }}
-              >
-                Ibikurikira <ArrowRightOutlined />
-              </p2>
+              <h1 style={{fontSize:"30px"}}>
+             {service.serviceName}
+             </h1>
+             <h2>
+             <Paragraph
+                  ellipsis={
+                    true
+                      ? {
+                          rows: 1,
+                          expandable: false,
+                          symbol: "more",
+                        }
+                      : false
+                  }
+                >
+                  {service.servicesDescription}{" "}
+                </Paragraph>
+                
+                <i>
+                  <b>
+                    Ibikurikira{" "}
+                    <ArrowRightOutlined
+                      style={{ width: "20%", fontSize: "26px" }}
+                    />
+                  </b>
+                </i>
+                </h2>
             </item>
           </div>
-          <div className="home-igenamigambi">
-            <item>
-              {/* <div ClassName="igenamigambi"> */}
-              <h1 style={{ fontSize: "20px" }}>
-                Ubuhinzi, Ubworozi n'umutungo kamere
-              </h1>
-              <br></br>
-              <p1 style={{ fontSize: "17px" }}>
-                Serivisi fatizo zitangwa mu karere mu ishami ry'ubuhinzi,
-                Ubworozi n'umutungo kamere
-              </p1>
-              <br></br>
-              <br></br>
-              <p2
-                style={{
-                  fontSize: "17px",
-                  marginLeft: "100px",
-                  fontStyle: "italic",
-                  fontWeight: "bold",
-                }}
-              >
-                Ibikurikira <ArrowRightOutlined />
-              </p2>
-            </item>
+          ))}
           </div>
-          <div className="home-igenamigambi">
-            <item>
-              {/* <div ClassName="igenamigambi"> */}
-              <h1 style={{ fontSize: "20px" }}>Imali</h1>
-              <br></br>
-              <p1 style={{ fontSize: "17px" }}>
-                Serivisi fatizo zitangwa mu karere mu ishami ry'Imali
-              </p1>
-              <br></br>
-              <br></br>
-              <br></br>
-              <p2
-                style={{
-                  fontSize: "17px",
-                  marginLeft: "100px",
-                  fontStyle: "italic",
-                  fontWeight: "bold",
-                }}
-              >
-                Ibikurikira <ArrowRightOutlined />
-              </p2>
-            </item>
-          </div>
-          
-        </div>
         <div className="search">
           <h2>Menya byinshi...</h2>
         </div>
@@ -125,7 +91,7 @@ const Home = () => {
             <img
               src={paragraphPhoto}
               alt=""
-              style={{ height: "40vh", width: "100%", borderRadius:"20px" }}
+              style={{ height: "40vh", width: "100%"}}
             />
           </div>
           <div className="rightside">
