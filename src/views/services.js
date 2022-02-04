@@ -11,7 +11,6 @@ const Services = () => {
   return (
     <HomeLayout>
       <div className="servicecontiner">
-        <h2 style={{ paddingLeft: "600px" }}>all services Umurenge utanga</h2>
         <div className="page-background">
           <h3>Serivisi zitandukanye zitangirwa k'Umurenge</h3>
         </div>
