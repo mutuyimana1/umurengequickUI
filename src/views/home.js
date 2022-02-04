@@ -30,7 +30,7 @@ const Home = () => {
     <>
       <HomeLayout>
         {/* <Space direction="vertical"/> */}
-
+<div className="all-content">
         <Search
           style={{ width: "70%", padding: "60px", paddingRight: "60px" }}
           placeholder="Shakira hano"
@@ -114,85 +114,18 @@ const Home = () => {
               </p2>
             </item>
           </div>
-          <div className="home-igenamigambi">
-            <item>
-              {/* <div ClassName="igenamigambi"> */}
-              <h1 style={{ fontSize: "20px" }}>Ubuzima</h1>
-              <br></br>
-              <p1 style={{ fontSize: "17px" }}>
-                Serivisi fatizo zitangwa kubijyanye n'ubuzima
-              </p1>
-              <br></br>
-              <br></br>
-              <br></br>
-              <p2
-                style={{
-                  fontSize: "17px",
-                  marginLeft: "100px",
-                  fontStyle: "italic",
-                  fontWeight: "bold",
-                }}
-              >
-                Ibikurikira <ArrowRightOutlined />
-              </p2>
-            </item>
-          </div>
-          <div className="home-igenamigambi">
-            <item>
-              {/* <div ClassName="igenamigambi"> */}
-              <h1 style={{ fontSize: "20px" }}>Imiyoborere Myiza</h1>
-              <br></br>
-              <p1 style={{ fontSize: "17px" }}>
-                Serivisi fatizo zitangwa mu karere mu ishami ry'Ubuhinzi
-                n'Ubworozi
-              </p1>
-              <br></br>
-              <br></br>
-              <br></br>
-              <p2
-                style={{
-                  fontSize: "17px",
-                  marginLeft: "100px",
-                  fontStyle: "italic",
-                  fontWeight: "bold",
-                }}
-              >
-                Ibikurikira <ArrowRightOutlined />
-              </p2>
-            </item>
-          </div>
-          <div className="home-igenamigambi">
-            <item>
-              {/* <div ClassName="igenamigambi"> */}
-              <h1 style={{ fontSize: "20px" }}>Uburezi</h1>
-              <br></br>
-              <p1 style={{ fontSize: "17px" }}>
-                Serivisi fatizo zitangwa kubijyanye n'uburezi
-              </p1>
-              <br></br>
-              <br></br>
-              <br></br>
-              <p2
-                style={{
-                  fontSize: "17px",
-                  marginLeft: "100px",
-                  fontStyle: "italic",
-                  fontWeight: "bold",
-                }}
-              >
-                Ibikurikira <ArrowRightOutlined />
-              </p2>
-            </item>
-          </div>
-          {/* </Carousel> */}
+          
+        </div>
+        <div className="search">
+          <h2>Menya byinshi...</h2>
         </div>
 
-        <div style={{ display: "flex" }}>
+        <div className="semi-home" >
           <div className="leftside">
             <img
               src={paragraphPhoto}
               alt=""
-              style={{ height: "40vh", width: "90%" }}
+              style={{ height: "40vh", width: "100%", borderRadius:"20px" }}
             />
           </div>
           <div className="rightside">
@@ -220,8 +153,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="search">
-          <button>Menya byinshi...</button>
+      
         </div>
       </HomeLayout>
     </>
