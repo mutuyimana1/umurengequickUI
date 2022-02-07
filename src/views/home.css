@@ -42,10 +42,15 @@
 
 
 }
+
+
 @keyframes button{
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
 .search:hover{
     transform:rotateY(180deg)
+}
+.background{
+    background-image: url("../assets/images/house3.jpeg");
 }

@@ -29,8 +29,8 @@ const Home = () => {
   return (
     <>
       <HomeLayout>
+        <div className="background">
         {/* <Space direction="vertical"/> */}
-
         <Search
           style={{ width: "70%", padding: "60px", paddingRight: "60px" }}
           placeholder="Shakira hano"
@@ -222,6 +222,7 @@ const Home = () => {
         </div>
         <div className="search">
           <button>Menya byinshi...</button>
+        </div>
         </div>
       </HomeLayout>
     </>

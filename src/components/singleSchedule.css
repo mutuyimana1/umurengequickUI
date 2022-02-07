@@ -9,7 +9,7 @@
 .leaders button{
    float: right;
    margin: 20px;
-   color: green;
+   color: rgb(105, 172, 105);
 }
 .profile{
    display: flex;

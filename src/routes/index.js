@@ -6,8 +6,10 @@ import Header from "../components/header";
 import ContactUs from "../views/contactUs";
 import DateAndTime from "../components/DateAndTime";
 import Schedule from "../views/Schedule";
-
 import AllBookings from "../views/dashboard/userDashboard";
+import Planner from "../components/planner";
+import PlannerLayout from "../components/plannerLayout";
+
 
 const Index = () => {
   const currentUrl = useLocation.pathname;
@@ -24,6 +26,9 @@ const Index = () => {
       <Route path="/contactUs" element={<ContactUs />} />
       <Route path="/header" element={<Header />} />
       <Route path="/userboard" element={<AllBookings />} />
+      <Route path="/planner" element={<Planner />} />
+      <Route path="/plannerlayout" element={<PlannerLayout />} />
+      
     </Routes>
   );
 };
