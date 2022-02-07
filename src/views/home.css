@@ -78,6 +78,8 @@
 
 
 }
+
+
 @keyframes button{
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -85,8 +87,10 @@
 .search:hover{
     transform:rotateY(180deg)
 }
+
 .search h2{
     font-weight: bold;
     /* color: rgb(75, 231, 14); */
     padding-left: 6px;
 }
+

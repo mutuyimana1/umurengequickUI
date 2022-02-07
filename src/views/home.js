@@ -33,8 +33,12 @@ const Home = () => {
   return (
     <>
       <HomeLayout>
+        <div className="background">
         {/* <Space direction="vertical"/> */}
+
+
 <div className="all-content">
+
         <Search
           style={{ width: "70%", padding: "60px", paddingRight: "60px" }}
           placeholder="Shakira hano"
@@ -120,6 +124,7 @@ const Home = () => {
           </div>
         </div>
       
+        </div>
         </div>
       </HomeLayout>
     </>

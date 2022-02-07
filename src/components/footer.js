@@ -12,7 +12,8 @@ import {InstagramOutlined,LinkedinOutlined,WhatsAppOutlined,FacebookOutlined} fr
 const Footer = () =>{
     return(
         <div className="footer">
-        <div style={{position:"relative", backgroundColor:"rgb(22, 138, 158)",minHeight:"50vh", marginTop:"0px"}}>
+        <div style={{position:"relative", backgroundColor:"gray",minHeight:"30vh", marginTop:"20px"}}>
+
             <div style={{display:"flex", marginLeft:"20px"}}>
 
                 <div className="logo" >

@@ -7,7 +7,7 @@ const HomeLayout = ({children}) => {
  return (
      <>
     <Header></Header>
-     <div style={{width:"100%"}} className="homeLayout"> {children}</div>
+     <div  className="homeLayout"> {children}</div>
 <Footer></Footer> 
 </>
  )
