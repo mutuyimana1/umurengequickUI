@@ -3,35 +3,71 @@
     margin:0;
     padding:0
 }
+.all-content{
+    background-image: url(../assets/images/house3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    height: 120vh;
+}
+.semi-home{
+    display: flex;
+     background-color:rgba(100, 185, 255, 0.486);
+     width: 100%;
+}
 .home-igenamigambi{
     background-color: rgb(255, 255, 255);
     background-size: fixed;
     border-radius: 10px;
     box-shadow: 0 0 5px 5px;
-    width: 300px;
-    padding: 20px;
-    margin-left: 50px;
+    width: 25%;
+    height: 30vh;
+    padding: 50px;
+    margin-left: 100px;
     margin-top:50px
+    
 }
 .container{
     display: flex;
     padding-bottom: 10px;
+    align-content: space-between;
+    opacity: 0;
+    animation-name: between;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    transition-duration: 1s;
+    padding:0% 6%;
 }
 .rightside{
-    margin-left: 110px;
-    margin-right: 20px;
+    background-color: white;
+    width: 60%;
+    border-radius: 20px;
+    /* box-shadow: 9px 8px 3px rgb(167, 235, 11); */
+    
 }
 .leftside{
-    margin-left: 30px;
+
+    width: 40%;
+    /* border-radius: 20px; */
+    /* box-shadow: 1px 5px 3px 1px rgb(167, 235, 11); */
+}
+.rightside p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: large;
 }
 .search{
-    margin-left: 600px;
-    margin-top: 50px;
+    margin-left: 800px;
+    margin-top: -10px;
+    margin-bottom: 30px;
     background-clip: border-box;
-    background-color: rgb(42, 123, 245);
-    padding: 10px;
+    background-color: rgb(22, 138, 158);
+    padding: auto;
     border-radius: 6px;
-    width: 125px;
+    width: 180px;
+    height: 5vh;
 
     animation-name: button;
     animation-duration: 3s;
@@ -51,6 +87,10 @@
 .search:hover{
     transform:rotateY(180deg)
 }
-.background{
-    background-image: url("../assets/images/house3.jpeg");
+
+.search h2{
+    font-weight: bold;
+    /* color: rgb(75, 231, 14); */
+    padding-left: 6px;
 }
+
