@@ -39,12 +39,13 @@ const Services = () => {
                   {service.servicesDescription}{" "}
                 </Paragraph>
                 <i>
-                  <b>
+                 <a href="/schedule"> <b>
                     Ibikurikira{" "}
                     <ArrowRightOutlined
                       style={{ width: "20%", fontSize: "26px" }}
                     />
                   </b>
+                  </a>
                 </i>
               </div>
             </div>
