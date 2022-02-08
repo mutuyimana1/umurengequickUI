@@ -29,10 +29,10 @@ const Services = () => {
                   ellipsis={
                     true
                       ? {
-                          rows: 1,
-                          expandable: false,
-                          symbol: "more",
-                        }
+                        rows: 1,
+                        expandable: false,
+                        symbol: "more",
+                      }
                       : false
                   }
                 >
