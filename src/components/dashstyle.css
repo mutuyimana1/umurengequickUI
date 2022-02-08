@@ -1,6 +1,7 @@
 .dashboard{
     background-color: rgb(115, 221, 115);
     height: 50vh;
+    border: none;
 
 }
 .trigger {
