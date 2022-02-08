@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import Planner from './planner';
-
+import './p.css'
 import { Tabs } from 'antd';
 import HomeLayout from './homelayout';
 
@@ -28,7 +28,7 @@ const PlannerLayout = () => {
       <Planner/>
     </TabPane>
   </Tabs>
-  <div style={{width:"30%",backgroundColor:"#6ec0fabb", height:"70vh", float:"right",marginTop:"-80vh" }}>
+  <div className='color' style={{width:"30%", height:"70vh", float:"right",marginTop:"-80vh" }} >
   <p>mslkmalk</p>
   </div>
   
