@@ -1,36 +1,84 @@
 
 .home-container{
+    
     text-align: center;
+    color:white;
     padding-left: 40px;
     padding-top: 50px;
     text-decoration: bold;
-    background-color: rgb(75, 125, 218);
+    background-color:rgb(22, 138, 158);
+
     background-size: cover;
-    width: 45%;
-    height:570px;
-    margin-left: 270px;
-    margin-top: 50px;
+    width: 50%;
+    height:560px;
     text-align: center;
+    /* border-radius: 12px; */
+    /* box-shadow: 0px 0px 4px 4px; */
 }
-.background{
-    /* background-image: url(../assets/images/Yul0hYmlAixvGCCQr73CXmvazZfqPX3Cre6tLnKh.png.crdownload); */
-    background-repeat: no-repeat;
+.box-flex{
+    width:100%;
+    padding: 50px;
+    display: flex;
+    align-content:flex-end;
+    height: auto;
+    margin-left: 78px;
+}
+.backgroung{
+    background-image: url(../assets/images/house3.jpeg);
     background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 .home-container button{
-    background-color: rgb(146, 145, 145);
+    color: rgb(22, 138, 158);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    height: 30px;
-    width: 100px;
+    text-align: center;
+    height: 50px;
+    width: 190%;
     margin-left: 180px;
-    margin-bottom: 5000px;
+    /* margin-bottom: 5000px; */
+    /* padding-bottom: 20px; */
 }
 .kkkk{
     display: flex;
     text-align: center;
-    margin-left: -30px;
+    padding-bottom: 20px;
+    padding-left: 40px;
 }
 .hhh{
     margin-left: 50px;
     height: 500px;
+}
+
+.icon2{
+    background-color:rgb(255, 255, 255);
+    background-size: cover;
+    margin-left: 100px;
+    height: 155px;
+    width: 185px;
+    text-align: center;
+
+}
+.icons{
+    display: flex;
+    margin-left: 220px;
+    /* margin-top: 50px; */
+    padding-top: 60px;
+}
+.icon2 p2{
+    font-weight: bold;
+
+}
+.map{
+    margin-left: 10px;
+}
+.icon2 h{
+    color:rgb(22, 138, 158);
+}
+.icon2 p2{
+    color:rgb(22, 138, 158);
+}
+.icon2 p3{
+    color:rgb(22, 138, 158);
 }
