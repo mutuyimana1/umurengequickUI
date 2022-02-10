@@ -8,8 +8,11 @@ const Schedule=()=>{
    
          return(
              <HomeLayout>
+            <h1 >Title TBD</h1>
+
             <div className="schedule-container">
                 {
+                    
                     leadersInfos.map((data)=>(<SingleSchedule leader={data} />))
                 }
             </div>
