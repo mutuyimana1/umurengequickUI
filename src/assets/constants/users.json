@@ -8,5 +8,35 @@
     "Identification_card":"1199970117085099",
     "phone_number":"+2507809083600",
     "gender":"female"
-    }
+    },
+    {
+        "firstName":"Flavia",
+        "lastName":"Nirere",
+        "email":"nirereflavia@gmail.com",
+        
+        "address":"Rwanda",
+        "Identification_card":"1199970117085099",
+        "phone_number":"+2507809083600",
+        "gender":"female"
+        },
+        {
+            "firstName":"Alice",
+            "lastName":"Mutuyimana",
+            "email":"mutuyimana@gmail.com",
+            
+            "address":"Rwanda",
+            "Identification_card":"1199970117085099",
+            "phone_number":"+2507809083600",
+            "gender":"female"
+            },
+            {
+                "firstName":"Cynthia",
+                "lastName":"Agasaro",
+                "email":"agasarocynthia@gmail.com",
+                
+                "address":"Rwanda",
+                "Identification_card":"1199970117085099",
+                "phone_number":"+2507809083600",
+                "gender":"female"
+                }
 ]
