@@ -4,11 +4,18 @@ import Home from "../views/home";
 import Services from "../views/services";
 import Header from "../components/header";
 import ContactUs from "../views/contactUs";
-import DateAndTime from "../components/DateAndTime";
+
 import Schedule from "../views/Schedule";
+
 import DashboardLayout from "../components/DashboardLayout"
 import NewSchedule from "../views/dashboard/createSchedule"
 import AllShedule from "../views/dashboard/allSchedule"
+
+
+import Planner from "../components/planner";
+import PlannerLayout from "../components/plannerLayout";
+import UserForm from "../components/userForm";
+
 
 const Index = () => {
   const currentUrl = useLocation.pathname;
@@ -20,12 +27,19 @@ const Index = () => {
     <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/schedule" element={<Schedule />} />
-      <Route path="/date" element={<DateAndTime />} />
+      
       <Route path="/serivisi" element={<Services />} />
       {/* <Route path='/header' element={<Header/>}/> */}
       <Route path="/contactUs" element={<ContactUs />} />
       <Route path="/header" element={<Header />} />
+
       <Route path="/dashboard" element={<DashboardLayout/>}/>
+
+     
+      <Route path="/planner" element={<Planner />} />
+      <Route path="/plannerlayout" element={<PlannerLayout />} />
+      <Route path="/userForm" element={<UserForm/>} />      
+
     </Routes>
 
 {/* { isUserLoggedIn && currentUrl.includes("/dash")?( */}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./singleSchedule.css"
 
-import DateAndTime from "./DateAndTime";
+import PlannerLayout from "./plannerLayout";
 import { Drawer } from "antd";
 
 import 'antd/dist/antd.css';
@@ -17,20 +17,26 @@ const SingleSchedule = ({ leader }) => {
     }
     return (
         <>
-            <Drawer placement="right" visible={DrawerVisible} width={520} onClose={() => closedrawerVisible()}>
-                <DateAndTime leader={leader} />
+            <Drawer placement="right" visible={DrawerVisible} width={1500} onClose={() => closedrawerVisible()}>
+                <  PlannerLayout leader={leader} />
             </Drawer>
-            <div className="leaders">
+            
+            <div className="leaders-card" >
                 <div className="profile" >
                     <img src={leader?.profile} ></img> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <h5><b> {leader?.title}</b></h5>
-                </div>
+                    <div>
+                <h5><b> {leader?.title}</b></h5>
+
                 <h5>Amazina : {leader?.name}</h5>
-                <h5>Akazi:{leader?.description}</h5>
-                <h5>Aho akorera:{leader?.address}</h5>
+                
                 <h5>numero ya telephone:{leader?.phone}</h5>
+                </div>
+                </div>
+                <h5>Akazi:{leader?.description}</h5>
+
+                
                 <div className="booking" onClose={() => closedrawerVisible()}></div>
-                <button onClick={() => handleclickDrawerVisible()}> book an appointment</button>
+                <button onClick={() => handleclickDrawerVisible()}> kubika gahunda</button>
             </div>
         </>
     )

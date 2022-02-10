@@ -39,6 +39,7 @@ const Header = () => {
   };
   return (
     <>
+    
       <div className="app">
         <main>
           {/* <button onClick={()=>setButtonPopup(true)}>Injira</button> */}
@@ -49,8 +50,11 @@ const Header = () => {
             {/* <div ClassName="navbar"> */}
             <div ClassName="navbar-fix">
 
-              <a href="/plannerLayout" style={{ color: "rgb(255, 255, 255)" }}>
+              <a href="/schedule" style={{ color: "rgb(255, 255, 255)" }}>
+
                 
+
+          
                 {" "}
                 Kora Gahunda
               </a>

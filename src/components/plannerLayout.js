@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import Planner from './planner';
-import './p.css'
+import './planner.css'
 import { Tabs } from 'antd';
 import HomeLayout from './homelayout';
+import {  Form, Input, Button } from "antd";
+import { useNavigate } from "react-router-dom";
+import UserForm from './userForm';
 
 const { TabPane } = Tabs;
 
@@ -13,26 +16,26 @@ function callback(key) {
 }
 
 const PlannerLayout = () => {
-    return(   
-      <HomeLayout>
+  
+    return( 
+      <>  
+      
         
   <Tabs defaultActiveKey="1" onChange={callback}>
-    <TabPane tab="Tab 1" key="1">
+    <TabPane tab="calendar" key="1" style={{ textAlign:"center"}}>
     <Planner/>
       
     </TabPane>
-    <TabPane tab="Tab 2" key="2">
-      Content of Tab Pane 2
+    <TabPane tab="booking" key="2">
+      <UserForm/>
     </TabPane>
     <TabPane tab="Tab 3" key="3">
       <Planner/>
     </TabPane>
   </Tabs>
-  <div className='color' style={{width:"30%", height:"70vh", float:"right",marginTop:"-80vh" }} >
-  <p>mslkmalk</p>
-  </div>
+
   
-  </HomeLayout>
+  </>
  )
 }
 export default PlannerLayout;
