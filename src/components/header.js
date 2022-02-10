@@ -49,7 +49,12 @@ const Header = () => {
             <h2>We Starve To Serve</h2>
             {/* <div ClassName="navbar"> */}
             <div ClassName="navbar-fix">
+
               <a href="/schedule" style={{ color: "rgb(255, 255, 255)" }}>
+
+                
+
+          
                 {" "}
                 Kora Gahunda
               </a>
