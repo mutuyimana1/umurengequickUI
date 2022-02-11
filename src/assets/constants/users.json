@@ -7,7 +7,8 @@
     "address":"Rwanda",
     "Identification_card":"1199970117085099",
     "phone_number":"+2507809083600",
-    "gender":"female"
+    "gender":"female",
+    "role":"admin"
     },
     {
         "firstName":"Flavia",
@@ -17,17 +18,17 @@
         "address":"Rwanda",
         "Identification_card":"1199970117085099",
         "phone_number":"+2507809083600",
-        "gender":"female"
+        "gender":"female",
+        "role":"user"
         },
         {
             "firstName":"Alice",
             "lastName":"Mutuyimana",
-            "email":"mutuyimana@gmail.com",
             
             "address":"Rwanda",
             "Identification_card":"1199970117085099",
             "phone_number":"+2507809083600",
-            "gender":"female"
+            "role":"leader"
             },
             {
                 "firstName":"Cynthia",
@@ -37,6 +38,6 @@
                 "address":"Rwanda",
                 "Identification_card":"1199970117085099",
                 "phone_number":"+2507809083600",
-                "gender":"female"
+                "role":"leader"
                 }
 ]
