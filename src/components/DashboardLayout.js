@@ -33,11 +33,11 @@ const DashboardLayout=({children})=>{
             <Link to="/dashboard/allschedule"  style={{fontSize:'18px',padding:"30px"}} > Manage All schedule</Link>
             </Menu.Item>
             <Menu.Item key="3" icon={<VideoCameraOutlined style={{fontSize: "25px"}} />}onClick={()=>
-            localStorage.removeItem("userLogedIn")}>
+            localStorage.removeItem("")}>
              <Link to="#"style={{fontSize:'23px', padding:"30px"}} >view online user</Link>
             </Menu.Item>
             <Menu.Item key="3" icon={<UploadOutlined style={{fontSize: "25px", padding:"30px"}} />}onClick={()=>
-            localStorage.removeItem("userLogedIn")}>
+            localStorage.removeItem("")}>
              <Link to="/home"style={{fontSize:'20px',padding:"120px"}} >Logout</Link>
             </Menu.Item>
           </Menu>

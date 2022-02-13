@@ -2,32 +2,43 @@ import React from "react";
 import logo from "../assets/images/logo.png";
 import "./header.css";
 
-
 import { useNavigate } from "react-router-dom";
 
 import Signup from "./signup";
-import Signin from "./signin"
+import Signin from "./signin";
 import { useState } from "react";
 import "antd/dist/antd.css";
-import { Form, Input, Button, Checkbox,InputNumber,Select } from "antd";
+import { Form, Input, Button, Checkbox, InputNumber, Select, notification } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
+import umurengeApis from "../services/umurengeApis"
 
 const Header = () => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const [buttonPopup, setButtonPopup] = useState(false);
-  const [SigninPopup, setSigninPopup]= useState(false);
+  const [SigninPopup, setSigninPopup] = useState(false);
   const { Option } = Select;
   function onChange(value) {
     console.log(`selected ${value}`);
   }
-  
+
   function onSearch(val) {
-    console.log('search:', val);
+    console.log("search:", val);
   }
 
   const onFinish = (values) => {
-    console.log('Received values of form: ', values);
-    navigate("/adminDashboard");
+    console.log("Received values of form: ", values);
+    umurengeApis.createAccount(values).then((res)=>{
+      if(!res){
+        return notification.error({message:"server is down"})
+      }
+      if(res.status===200){
+        return notification.success({message:"your account created successfully"})
+      }
+      else{
+        return notification.error({message:!res.data.error?res.data.message:res.data.error})
+      }
+    })
+    navigate("#");
   };
   const layout = {
     labelCol: {
@@ -39,7 +50,6 @@ const Header = () => {
   };
   return (
     <>
-    
       <div className="app">
         <main>
           {/* <button onClick={()=>setButtonPopup(true)}>Injira</button> */}
@@ -49,12 +59,7 @@ const Header = () => {
             <h2>We Starve To Serve</h2>
             {/* <div ClassName="navbar"> */}
             <div ClassName="navbar-fix">
-
               <a href="/schedule" style={{ color: "rgb(255, 255, 255)" }}>
-
-                
-
-          
                 {" "}
                 Kora Gahunda
               </a>
@@ -137,7 +142,6 @@ const Header = () => {
                   <Checkbox>Remember me</Checkbox>
                 </Form.Item>
 
-
                 <a
                   className="login-form-forgot"
                   href=""
@@ -157,148 +161,131 @@ const Header = () => {
                 </Button>
                 Or{" "}
                 <a
-                href="#"
-                style={{ color: "rgb(255, 255, 255)" }}
-                onClick={() => setSigninPopup(true)}
-              >
-                Iyandikije nonaha
-              </a>
+                  href="#"
+                  style={{ color: "rgb(255, 255, 255)" }}
+                  onClick={() => setSigninPopup(true)}
+                >
+                  Iyandikije nonaha
+                </a>
               </Form.Item>
             </div>
           </Form>
         </Signup>
-<Signin trigger={SigninPopup} setTrigger={setSigninPopup}>
-        <Form {...layout} name="nest-messages" onFinish={onFinish}>
-      <Form.Item
-        name={['user', 'firstName']}
-        label="firstName"
-        rules={[
-          {
-            required: true,
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item
-        name={['user', 'lastName']}
-        label="lastName"
-        rules={[
-          {
-            required: true,
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item
-        name={['user', 'email']}
-        label="Email"
-        rules={[
-          {
-            type: 'email',
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item
-               name={['user', 'password']}
-               label="Password"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please input your Password!",
-                  },
-                ]}
+        <Signin trigger={SigninPopup} setTrigger={setSigninPopup}>
+          <Form {...layout} name="nest-messages" onFinish={onFinish}>
+            <Form.Item
+              name={["user", "firstName"]}
+              label="firstName"
+              rules={[
+                {
+                  required: true,
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
+            <Form.Item
+              name={["user", "lastName"]}
+              label="lastName"
+              rules={[
+                {
+                  required: true,
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
+            <Form.Item
+              name={["user", "email"]}
+              label="Email"
+              rules={[
+                {
+                  type: "email",
+                },
+              ]}
+            >
+              <Input />
+            </Form.Item>
+            <Form.Item
+              name={["user", "password"]}
+              label="Password"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your Password!",
+                },
+              ]}
+            >
+              <Input
+                prefix={<LockOutlined className="site-form-item-icon" />}
+                type="password"
+                placeholder="Password"
+              />
+            </Form.Item>
+            <Form.Item
+              name="address"
+              label="address"
+              
+            >
+              <Input />
+            </Form.Item>
+            <Form.Item
+              name= "Identification-card"
+              label="Identification-card"
+              
+            >
+              <Input />
+            </Form.Item>
+            <Form.Item
+              name="phone-number"
+              label="phone-number"
+             
+            >
+              <Input />
+            </Form.Item>
+            <Form.Item name={["user", "gender"]} label="gender">
+              <Select
+                showSearch
+                placeholder="Select your gender"
+                optionFilterProp="children"
+                onChange={onChange}
+                onSearch={onSearch}
+                filterOption={(input, option) =>
+                  option.children.toLowerCase().indexOf(input.toLowerCase()) >=
+                  0
+                }
               >
-                <Input
-                  prefix={<LockOutlined className="site-form-item-icon" />}
-                  type="password"
-                  placeholder="Password"
-                />
-              </Form.Item>
-              <Form.Item
-        name={['user', 'address']}
-        label="address"
-        rules={[
-          {
-            type:String,
-            default: "Rwanda",
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item
-        name={['user', 'Identification-card']}
-        label="Identification-card"
-        rules={[
-          {
-            type:String,
-            default: "Rwanda",
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item
-        name={['user','phone-number']}
-        label="phone-number"
-        rules={[
-          {
-            type:String,
-            default: "Rwanda",
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item
-        name={['user','gender']}
-        label="gender">
-      <Select
-    showSearch
-    placeholder="Select your gender"
-    optionFilterProp="children"
-    onChange={onChange}
-    onSearch={onSearch}
-    filterOption={(input, option) =>
-      option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
-    }
-  >
-    <Option value="jack">Female</Option>
-    <Option value="lucy">Male</Option>
-    <Option value="tom">Not say</Option>
-  </Select><br/>
-  </Form.Item>
-  <Form.Item
-        name={['user','Role']}
-        label="Role">
-  <Select
-    showSearch
-    placeholder="Select your Role"
-    optionFilterProp="children"
-    onChange={onChange}
-    onSearch={onSearch}
-    filterOption={(input, option) =>
-      option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
-    }
-  >
-    <Option value="jack">Admin</Option>
-    <Option value="lucy">Leader</Option>
-    <Option value="tom">User</Option>
-  </Select>
-  </Form.Item>
-      <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-        <Button type="primary" htmlType="submit">
-          Submit
-        </Button>
-      </Form.Item>
-    </Form>
-    </Signin>
+                <Option value="jack">Female</Option>
+                <Option value="lucy">Male</Option>
+                <Option value="tom">Not say</Option>
+              </Select>
+              <br />
+            </Form.Item>
+            <Form.Item name={["user", "Role"]} label="Role">
+              <Select
+                showSearch
+                placeholder="Select your Role"
+                optionFilterProp="children"
+                onChange={onChange}
+                onSearch={onSearch}
+                filterOption={(input, option) =>
+                  option.children.toLowerCase().indexOf(input.toLowerCase()) >=
+                  0
+                }
+              >
+                <Option value="jack">Admin</Option>
+                <Option value="lucy">Leader</Option>
+                <Option value="tom">User</Option>
+              </Select>
+            </Form.Item>
+            <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
+              <Button type="primary" htmlType="submit">
+                Submit
+              </Button>
+            </Form.Item>
+          </Form>
+        </Signin>
       </div>
-
     </>
   );
 };
