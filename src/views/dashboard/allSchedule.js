@@ -9,7 +9,8 @@ import umurengeApis from "../../services/umurengeApis";
 
 const AllUsers = () => {
   const [allUsersData, setAllUsersData] = useState([]);
-const [isDrowerVisible, setisDrowerVisible]=useState(false);
+const [isDrawerVisible, setIsDrawerVisible]=useState(false);
+const [user, setUser] = useState({});
   useEffect(() => {
     umurengeApis.getAllUsers().then((res) => {
       console.log(res);
@@ -59,12 +60,17 @@ const column = [
     key: "action",
     render: (text,record)=>(
         
-        <space>
-            <a href="">view</a>
+        <Space>
+            <a href="#"
+            onClick={()=>{
+              setUser(record);
+              setIsDrawerVisible(true)
+            }}
+            >view</a>
             <a href="">Edit</a>
             <a href="" style={{color:"red"}}>Delete</a>
 
-        </space>
+        </Space>
     
     )
   },
@@ -121,7 +127,10 @@ const columnSecond = [
         style={{ border: "none" }}
       />
        <Drawer>
-          
+       placement="left"
+        onClose={() => setIsDrawerVisible(false)}
+        visible={isDrawerVisible}
+        width="50%"
 
        </Drawer>
     </>

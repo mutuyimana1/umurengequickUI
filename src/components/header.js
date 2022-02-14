@@ -8,9 +8,17 @@ import Signup from "./signup";
 import Signin from "./signin";
 import { useState } from "react";
 import "antd/dist/antd.css";
-import { Form, Input, Button, Checkbox, InputNumber, Select, notification } from "antd";
+import {
+  Form,
+  Input,
+  Button,
+  Checkbox,
+  InputNumber,
+  Select,
+  notification,
+} from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
-import umurengeApis from "../services/umurengeApis"
+import umurengeApis from "../services/umurengeApis";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -27,17 +35,20 @@ const Header = () => {
 
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
-    umurengeApis.createAccount(values).then((res)=>{
-      if(!res){
-        return notification.error({message:"server is down"})
+    umurengeApis.createAccount(values).then((res) => {
+      if (!res) {
+        return notification.error({ message: "server is down" });
       }
-      if(res.status===200){
-        return notification.success({message:"your account created successfully"})
+      if (res.status === 200) {
+        return notification.success({
+          message: "your account created successfully",
+        });
+      } else {
+        return notification.error({
+          message: !res.data.error ? res.data.message : res.data.error,
+        });
       }
-      else{
-        return notification.error({message:!res.data.error?res.data.message:res.data.error})
-      }
-    })
+    });
     navigate("#");
   };
   const layout = {
@@ -106,6 +117,7 @@ const Header = () => {
               remember: true,
             }}
             onFinish={onFinish}
+            
           >
             <div style={{ marginTop: "40px" }}>
               <Form.Item
@@ -174,7 +186,7 @@ const Header = () => {
         <Signin trigger={SigninPopup} setTrigger={setSigninPopup}>
           <Form {...layout} name="nest-messages" onFinish={onFinish}>
             <Form.Item
-              name={["user", "firstName"]}
+              name={"firstName"}
               label="firstName"
               rules={[
                 {
@@ -185,7 +197,7 @@ const Header = () => {
               <Input />
             </Form.Item>
             <Form.Item
-              name={["user", "lastName"]}
+              name={"lastName"}
               label="lastName"
               rules={[
                 {
@@ -196,7 +208,7 @@ const Header = () => {
               <Input />
             </Form.Item>
             <Form.Item
-              name={["user", "email"]}
+              name={"email"}
               label="Email"
               rules={[
                 {
@@ -207,7 +219,7 @@ const Header = () => {
               <Input />
             </Form.Item>
             <Form.Item
-              name={["user", "password"]}
+              name={"password"}
               label="Password"
               rules={[
                 {
@@ -222,46 +234,34 @@ const Header = () => {
                 placeholder="Password"
               />
             </Form.Item>
-            <Form.Item
-              name="address"
-              label="address"
-              
-            >
+            <Form.Item name="address" label="address">
               <Input />
             </Form.Item>
-            <Form.Item
-              name= "Identification-card"
-              label="Identification-card"
-              
-            >
+            <Form.Item name="Identification_card" label="Identification-card">
               <Input />
             </Form.Item>
-            <Form.Item
-              name="phone-number"
-              label="phone-number"
-             
-            >
+            <Form.Item name="phone_number" label="phone-number">
               <Input />
             </Form.Item>
-            <Form.Item name={["user", "gender"]} label="gender">
-              <Select
-                showSearch
-                placeholder="Select your gender"
-                optionFilterProp="children"
-                onChange={onChange}
-                onSearch={onSearch}
-                filterOption={(input, option) =>
-                  option.children.toLowerCase().indexOf(input.toLowerCase()) >=
-                  0
-                }
-              >
-                <Option value="jack">Female</Option>
-                <Option value="lucy">Male</Option>
-                <Option value="tom">Not say</Option>
-              </Select>
-              <br />
-            </Form.Item>
-            <Form.Item name={["user", "Role"]} label="Role">
+            
+      <Form.Item
+        name="gender"
+        label="Gender"
+        rules={[
+          {
+            required: true,
+            message: 'Please select gender!',
+          },
+        ]}
+      >
+        <Select placeholder="select your gender">
+          <Option value="male">Male</Option>
+          <Option value="female">Female</Option>
+          <Option value="other">Other</Option>
+          <Option value="not prefer to say">Not prefer to say</Option>
+        </Select>
+      </Form.Item>
+            <Form.Item name={"Role"} label="Role">
               <Select
                 showSearch
                 placeholder="Select your Role"
