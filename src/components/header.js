@@ -27,7 +27,7 @@ const Header = () => {
 
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
-    navigate("/adminDashboard");
+  
   };
   const layout = {
     labelCol: {
@@ -214,43 +214,28 @@ const Header = () => {
                 />
               </Form.Item>
               <Form.Item
-        name={['user', 'address']}
+        name='address'
         label="address"
-        rules={[
-          {
-            type:String,
-            default: "Rwanda",
-          },
-        ]}
+       
       >
         <Input />
       </Form.Item>
       <Form.Item
-        name={['user', 'Identification-card']}
+        name= 'Identification-card'
         label="Identification-card"
-        rules={[
-          {
-            type:String,
-            default: "Rwanda",
-          },
-        ]}
+        
       >
         <Input />
       </Form.Item>
       <Form.Item
-        name={['user','phone-number']}
+        name='phone-number'
         label="phone-number"
-        rules={[
-          {
-            type:String,
-            default: "Rwanda",
-          },
-        ]}
+       
       >
         <Input />
       </Form.Item>
       <Form.Item
-        name={['user','gender']}
+        name='gender'
         label="gender">
       <Select
     showSearch
