@@ -1,29 +1,28 @@
-.dashboard{
-    background-color: rgb(115, 221, 115);
-    height: 50vh;
-
+.sidebar{
+  background-color:rgb(22, 138, 158); 
+  width:320px;
 }
+
 .trigger {
-    padding: 0 24px;
-    font-size: 18px;
-    line-height: 64px;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  .trigger:hover {
-    color: #1890ff;
-  }
-  
-  .logo {
-    height: 32px;
-    margin: 16px;
-    background: rgba(255, 255, 255, 0.3);
-  }
-  
-  .site-layout .site-layout-background {
-    background: #fff;
-  }
-  table{
-    border: none;
-  }
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  height: 120px;
+ margin-bottom: 20px;
+  background-image: url(/src/assets/images/log.png);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+ 

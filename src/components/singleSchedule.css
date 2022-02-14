@@ -1,4 +1,4 @@
-.leaders{    
+.leaders-card{    
    margin: 20px;   
    height: 52vh;
    width: 100%;
@@ -14,7 +14,11 @@
 .leaders button{
    float: right;
    margin: 20px;
-   color: green;
+   background-color: rgba(48, 38, 182, 0.151);
+    padding: auto;
+    border-radius: 6px;
+    width: auto;
+    height: 5vh;
 }
 .profile{
    display: flex;

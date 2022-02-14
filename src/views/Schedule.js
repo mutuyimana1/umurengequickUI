@@ -12,6 +12,7 @@ const Schedule=()=>{
                  <h1><b>ABAYOBOZI BACU</b></h1>
             <div className="schedule-container">
                 {
+                    
                     leadersInfos.map((data)=>(<SingleSchedule leader={data} />))
                 }
             </div>

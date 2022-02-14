@@ -7,6 +7,7 @@
     "address":"Kimironko",
     "Identification_card":"1199970117085099",
     "phone_number":"+2507809083600",
+<<<<<<< HEAD
     "gender":"female"
     },
     {
@@ -29,3 +30,39 @@
             "gender":"female"
             }
 ]
+=======
+    "gender":"female",
+    "role":"admin"
+    },
+    {
+        "firstName":"Flavia",
+        "lastName":"Nirere",
+        "email":"nirereflavia@gmail.com",
+        
+        "address":"Rwanda",
+        "Identification_card":"1199970117085099",
+        "phone_number":"+2507809083600",
+        "gender":"female",
+        "role":"user"
+        },
+        {
+            "firstName":"Alice",
+            "lastName":"Mutuyimana",
+            
+            "address":"Rwanda",
+            "Identification_card":"1199970117085099",
+            "phone_number":"+2507809083600",
+            "role":"leader"
+            },
+            {
+                "firstName":"Cynthia",
+                "lastName":"Agasaro",
+                "email":"agasarocynthia@gmail.com",
+                
+                "address":"Rwanda",
+                "Identification_card":"1199970117085099",
+                "phone_number":"+2507809083600",
+                "role":"leader"
+                }
+]
+>>>>>>> 77d521266096ccf92f01f11657b5cef9f137115f
