@@ -140,6 +140,8 @@ const Header = () => {
               <Form.Item>
                 <Form.Item name="remember" valuePropName="checked" noStyle>
                   <Checkbox>Remember me</Checkbox>
+            {/* <img src={logo} height="50px" width={"80px" } margin-top={ "-20px"} /> */}
+
                 </Form.Item>
 
                 <a
@@ -164,6 +166,7 @@ const Header = () => {
                   href="#"
                   style={{ color: "rgb(255, 255, 255)" }}
                   onClick={() => setSigninPopup(true)}
+                  
                 >
                   Iyandikije nonaha
                 </a>
@@ -174,7 +177,7 @@ const Header = () => {
         <Signin trigger={SigninPopup} setTrigger={setSigninPopup}>
           <Form {...layout} name="nest-messages" onFinish={onFinish}>
             <Form.Item
-              name={["user", "firstName"]}
+              name="firstName"
               label="firstName"
               rules={[
                 {
@@ -185,7 +188,7 @@ const Header = () => {
               <Input />
             </Form.Item>
             <Form.Item
-              name={["user", "lastName"]}
+              name="lastName"
               label="lastName"
               rules={[
                 {
@@ -196,7 +199,7 @@ const Header = () => {
               <Input />
             </Form.Item>
             <Form.Item
-              name={["user", "email"]}
+              name= "email"
               label="Email"
               rules={[
                 {
@@ -207,7 +210,7 @@ const Header = () => {
               <Input />
             </Form.Item>
             <Form.Item
-              name={["user", "password"]}
+              name="password"
               label="Password"
               rules={[
                 {
@@ -230,20 +233,20 @@ const Header = () => {
               <Input />
             </Form.Item>
             <Form.Item
-              name= "Identification-card"
-              label="Identification-card"
+              name= "Identification_card"
+              label="Identification_card"
               
             >
               <Input />
             </Form.Item>
             <Form.Item
-              name="phone-number"
-              label="phone-number"
+              name="phone_number"
+              label="phone_number"
              
             >
               <Input />
             </Form.Item>
-            <Form.Item name={["user", "gender"]} label="gender">
+            <Form.Item name= "gender" label="gender">
               <Select
                 showSearch
                 placeholder="Select your gender"
@@ -261,7 +264,7 @@ const Header = () => {
               </Select>
               <br />
             </Form.Item>
-            <Form.Item name={["user", "Role"]} label="Role">
+            <Form.Item name= "role" label="Role">
               <Select
                 showSearch
                 placeholder="Select your Role"

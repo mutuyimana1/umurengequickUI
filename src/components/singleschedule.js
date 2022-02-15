@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./singleSchedule.css"
-import DateAndTime from "./DateAndTime";
+
 import { Drawer } from "antd";
 import 'antd/dist/antd.css';
 import Calendar from "./calendar";
+import PlannerLayout from "./plannerLayout";
 
 
 const SingleSchedule = ({ leader }) => {
@@ -18,7 +19,7 @@ const SingleSchedule = ({ leader }) => {
         <>
         <div className="flexing">
             <Drawer placement="right" visible={DrawerVisible} width={1000} onClose={() => closedrawerVisible()}>
-                <Calendar leader={leader} />
+                <PlannerLayout leader={leader} />
             </Drawer>
             
             <div className="leaders-card" >

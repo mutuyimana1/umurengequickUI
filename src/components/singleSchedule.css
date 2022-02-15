@@ -1,11 +1,11 @@
 .leaders-card{    
    margin: 20px;   
-   height: 52vh;
-   width: 100%;
+   height: 42vh;
+   
   border: 1px solid black;
   padding: 20px; 
   font-size: x-large;
-  
+  box-shadow:3px 3px blue;
 }
 .flexing{
    display: flex;
@@ -27,6 +27,4 @@
   height: 20vh;
   font-size:x-large;   
 }
-.calendar{
-   width:100%;
-}
+
