@@ -48,7 +48,7 @@
 }
 .card:hover{
     background-color: rgb(75,231,14);
-    transition:2s;
+    transition:1s;
     color: white;
     /* transform:rotateX(180deg) */
     

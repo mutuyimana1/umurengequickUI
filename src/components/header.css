@@ -2,13 +2,24 @@
     box-sizing:border-box;
     margin:0;
     padding:0
+
 }
+.navbar-fix a:hover{
+    text-decoration:4px  underline;
+    color: #ffffff;
+    transition: 0s;
+}
+
 .header{
+    
     background-color:rgb(22, 138, 158);
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     image-orientation: 10deg;
     height: 200px;
+    position:fixed;
+    width: 100%;
+    z-index: 20;
 }
 .header img{
     /* padding-top: 50px; */
@@ -35,7 +46,7 @@
     font-weight: bold;
 }
 a{
-    color: rgb(75, 231, 14);
+    color: rgb(76, 231, 14);
     float: right;
     padding-right: 60px;
     font-size: 18px;
@@ -45,3 +56,35 @@ a{
     /* margin-left: 100px; */
 }
 
+@import '~antd/dist/antd.css';
+
+.login-form {
+  max-width: 300px;
+}
+.login-form-forgot {
+  float: right;
+}
+.ant-col-rtl .login-form-forgot {
+  float: left;
+}
+.login-form-button {
+  width: 100%;
+}
+.dorwer-log{
+    background-color:rgb(22, 138, 158) ;
+    margin-bottom: 10px;
+    height: 80px;
+}
+.drower-flex{
+    display: flex;
+    padding-right: 10px;
+}
+.login{
+    font-size: 50px;
+    text-decoration: bold;
+    margin-left: 20px;
+}
+.display-flex{display: flex;}
+/* .k{
+    justfy-content: space
+} */

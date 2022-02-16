@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 80%;
-    height: 120vh;
+    height: 40vh;
 }
 .semi-home{
     display: flex;
@@ -39,6 +39,7 @@
     transition-property: all;
     transition-duration: 1s;
     padding:0% 6%;
+    /* margin-top: 100px; */
 }
 .rightside{
     background-color: white;
@@ -68,10 +69,12 @@
     border-radius: 6px;
     width: 180px;
     height: 5vh;
+    text-align: center;
+    font-size: 28px;
 
     animation-name: button;
-    animation-duration: 3s;
-    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
     transition-property: all;
     transition-duration: 1s;
@@ -93,4 +96,56 @@
     /* color: rgb(75, 231, 14); */
     padding-left: 6px;
 }
-
+a:hover{
+    color:rgb(22, 138, 158);
+}
+a{
+    color: black;
+}
+.imageSlider{
+    /* padding-bottom: 20px; */
+    margin-top: 350px;
+}
+.imageSlider img{
+    height:530px;
+     width:60%;
+      text-align: center;
+      margin-left: 310px;
+}
+.hh{
+    text-align: center;
+    /* box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.596); */
+    background-color: rgba(39, 143, 190, 0.767);
+    width: 100%;
+    height: 100px;
+    /* margin-left: 400px; */
+}
+.summary{
+    display: flex;
+}
+.h1{
+    /* font-size: 2px; */
+    align-content: space-between;
+    /* color:red */
+    padding:25px;
+}
+.marquee p{
+    transform:translateX(100%);
+animation: cssmarquee 10s linear infinite;
+}
+.gh{
+    background-color:  rgb(0, 146, 214);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    text-align: center;
+    width: 10%;
+    height: 50px;
+    font-size: 30px;
+    margin-left: 700px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+.gh h{
+   text-align: center;
+}
