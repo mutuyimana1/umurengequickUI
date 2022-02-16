@@ -34,6 +34,10 @@ const Header = () => {
   }
 
   const onFinish = (values) => {
+
+
+  
+
     console.log("Received values of form: ", values);
     umurengeApis.createAccount(values).then((res) => {
       if (!res) {
@@ -50,6 +54,7 @@ const Header = () => {
       }
     });
     navigate("#");
+
   };
   const layout = {
     labelCol: {
@@ -277,6 +282,67 @@ const Header = () => {
                   0
                 }
               >
+
+                <Input
+                  prefix={<LockOutlined className="site-form-item-icon" />}
+                  type="password"
+                  placeholder="Password"
+                />
+              </Form.Item>
+              <Form.Item
+        name='address'
+        label="address"
+       
+      >
+        <Input />
+      </Form.Item>
+      <Form.Item
+        name= 'Identification-card'
+        label="Identification-card"
+        
+      >
+        <Input />
+      </Form.Item>
+      <Form.Item
+        name='phone-number'
+        label="phone-number"
+       
+      >
+        <Input />
+      </Form.Item>
+      <Form.Item
+        name='gender'
+        label="gender">
+      <Select
+    showSearch
+    placeholder="Select your gender"
+    optionFilterProp="children"
+    onChange={onChange}
+    onSearch={onSearch}
+    filterOption={(input, option) =>
+      option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+    }
+  >
+    <Option value="jack">Female</Option>
+    <Option value="lucy">Male</Option>
+    <Option value="tom">Not say</Option>
+  </Select><br/>
+  </Form.Item>
+  <Form.Item
+        name={['user','Role']}
+        label="Role">
+  <Select
+    showSearch
+    placeholder="Select your Role"
+    optionFilterProp="children"
+    onChange={onChange}
+    onSearch={onSearch}
+    filterOption={(input, option) =>
+      option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+    }
+  >
+    
+
                 <Option value="jack">Admin</Option>
                 <Option value="lucy">Leader</Option>
                 <Option value="tom">User</Option>
@@ -289,6 +355,7 @@ const Header = () => {
             </Form.Item>
           </Form>
         </Signin>
+
       </div>
     </>
   );
