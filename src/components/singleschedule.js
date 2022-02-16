@@ -33,10 +33,8 @@ const SingleSchedule = ({ leader }) => {
                 <h5>numero ya telephone:{leader?.phone}</h5>
                 </div>
                 </div>
-                <h5>Akazi:{leader?.description}</h5>
-
-                
-                <div className="booking" onClose={() => closedrawerVisible()}></div>
+                <h5>Akazi:{leader?.description}</h5>                
+                <div style={{float:"left"}} onClose={() => closedrawerVisible()}></div>
                 <button onClick={() => handleclickDrawerVisible()}> HITAMO UMUNSI</button>
             </div>
             </div>

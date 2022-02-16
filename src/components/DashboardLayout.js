@@ -39,7 +39,7 @@ const DashboardLayout=({children})=>{
              <Link to="#"style={{fontSize:'23px', padding:"30px"}} >view online user</Link>
             </Menu.Item>
             <Menu.Item key="3" icon={<UploadOutlined style={{fontSize: "25px", padding:"30px"}} />}onClick={()=>
-            localStorage.removeItem("")}>
+           localStorage.removeItem("userLogedIn")}>
              <Link to="/home"style={{fontSize:'20px',padding:"120px"}} >Logout</Link>
             </Menu.Item>
           </Menu>
