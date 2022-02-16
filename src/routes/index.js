@@ -16,8 +16,7 @@ import AllShedule from "../views/dashboard/allSchedule"
 
 
 import Planner from "../components/planner";
-import PlannerLayout from "../components/plannerLayout";
-import UserForm from "../components/userForm";
+
 
 
 const Index = () => {
@@ -30,7 +29,7 @@ const Index = () => {
     <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/schedule" element={<Schedule />} />
-      
+      <Route path="/planner" element={<Planner/>} />
       <Route path="/serivisi" element={<Services />} />
       {/* <Route path='/header' element={<Header/>}/> */}
       <Route path="/contactUs" element={<ContactUs />} />

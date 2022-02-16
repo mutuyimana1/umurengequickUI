@@ -3,7 +3,6 @@ import "./singleSchedule.css"
 
 import { Drawer } from "antd";
 import 'antd/dist/antd.css';
-import Calendar from "./calendar";
 import PlannerLayout from "./plannerLayout";
 
 
@@ -17,7 +16,7 @@ const SingleSchedule = ({ leader }) => {
     }
     return (
         <>
-        <div className="flexing">
+        {/* <div className="flexing"> */}
             <Drawer placement="right" visible={DrawerVisible} width={1000} onClose={() => closedrawerVisible()}>
                 <PlannerLayout leader={leader} />
             </Drawer>
@@ -34,10 +33,11 @@ const SingleSchedule = ({ leader }) => {
                 </div>
                 </div>
                 <h5>Akazi:{leader?.description}</h5>                
-                <div style={{float:"left"}} onClose={() => closedrawerVisible()}></div>
-                <button onClick={() => handleclickDrawerVisible()}> HITAMO UMUNSI</button>
+                <div  onClose={() => closedrawerVisible()} className="leaders-button">
+                <button onClick={() => handleclickDrawerVisible()}> Hitamo umunsi</button>
+                </div>
             </div>
-            </div>
+            {/* </div> */}
         </>
     )
 }
