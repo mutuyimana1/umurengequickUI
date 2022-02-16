@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./singleSchedule.css"
 
-import PlannerLayout from "./plannerLayout";
 import { Drawer } from "antd";
-
 import 'antd/dist/antd.css';
+import PlannerLayout from "./plannerLayout";
 
 
 const SingleSchedule = ({ leader }) => {
@@ -17,8 +16,9 @@ const SingleSchedule = ({ leader }) => {
     }
     return (
         <>
-            <Drawer placement="right" visible={DrawerVisible} width={1500} onClose={() => closedrawerVisible()}>
-                <  PlannerLayout leader={leader} />
+        {/* <div className="flexing"> */}
+            <Drawer placement="right" visible={DrawerVisible} width={1000} onClose={() => closedrawerVisible()}>
+                <PlannerLayout leader={leader} />
             </Drawer>
             
             <div className="leaders-card" >
@@ -32,12 +32,12 @@ const SingleSchedule = ({ leader }) => {
                 <h5>numero ya telephone:{leader?.phone}</h5>
                 </div>
                 </div>
-                <h5>Akazi:{leader?.description}</h5>
-
-                
-                <div className="booking" onClose={() => closedrawerVisible()}></div>
-                <button onClick={() => handleclickDrawerVisible()}> kubika gahunda</button>
+                <h5>Akazi:{leader?.description}</h5>                
+                <div  onClose={() => closedrawerVisible()} className="leaders-button">
+                <button onClick={() => handleclickDrawerVisible()}> Hitamo umunsi</button>
+                </div>
             </div>
+            {/* </div> */}
         </>
     )
 }

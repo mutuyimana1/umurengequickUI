@@ -1,8 +1,12 @@
 .schedule-container{
     display: flex;
     flex-wrap: wrap;
+
 }
-h1{
-    color: green;
+h1{    
     text-align: center;
+}
+.background{
+    background-image: url(../assets/images/house3.jpeg);
+
 }

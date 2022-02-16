@@ -40,7 +40,7 @@ const Home = () => {
 <div className="all-content">
 
         <Search
-          style={{ width: "70%", padding: "60px", paddingRight: "60px" }}
+          style={{ width: "45%", padding: "55px", paddingRight: "30px" }}
           placeholder="Shakira hano"
           enterButton="Shakisha"
           size="large"

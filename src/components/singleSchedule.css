@@ -1,20 +1,26 @@
 .leaders-card{    
    margin: 20px;   
-   height: 52vh;
-   width: 40%;
-  border: 1px solid rgba(48, 38, 182, 0.151);
+   height: 42vh;
+   
+  border: 1px solid black;
   padding: 20px; 
   font-size: x-large;
-  box-shadow: 3px 3px 3px 3px;
+  box-shadow:3px 3px rgb(19, 18, 18);
+  background-color: beige;
 }
-.leaders button{
+.flexing{
+   display: flex;
+  
+}
+.leaders-button{
+   border-radius: 10%;
+
    float: right;
    margin: 20px;
    background-color: rgba(48, 38, 182, 0.151);
-    padding: auto;
-    border-radius: 6px;
-    width: auto;
-    height: 5vh;
+   padding: auto;
+   /* width: auto; */
+   height: 5vh;
 }
 .profile{
    display: flex;
@@ -23,3 +29,4 @@
   height: 20vh;
   font-size:x-large;   
 }
+
