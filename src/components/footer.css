@@ -18,7 +18,7 @@
     position: relative;
     display: block;
     width: calc(139% + 1.3px);
-    height: 198px;
+    height: 148px;
 }
 
 .custom-shape-divider-bottom-1643320600 .shape-fill {
@@ -27,21 +27,113 @@
 .footer{
     width: 100%;
 }
-.our-service{
+.footer-container{
+    display: flex;
+
+}
+.footer-side-1{
+    /* background-color: aliceblue; */
     width: 20%;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 20px;
-    list-style-type: none;
+    height:50vh;
+    padding-left: 30px;
+    padding-top: 30px;
+
+}
+.footer-side-2{
+    /* background-color: rgb(71, 128, 179); */
+    width: 20%;
+    height: 10vh;
+    padding-left: 30px;
+    padding-top: 30px;
+
+}
+.footer-side-3{
+    /* background-color: rgb(12, 13, 14); */
+    width: 20%;
+    height: 10vh;
+    padding-left: 30px;
+    padding-top: 30px;
+
+}
+.footer-side-4{
+    /* background-color: rgb(185, 189, 192); */
+    width: 20%;
+    height: 10vh;
+    padding-left: 30px;
+    padding-top: 30px;
+
+}
+.footer-side-5{
+    /* background-color: rgb(8, 111, 151); */
+    width: 14%;
+    height: 34vh;
+    padding-left: 30px;
+    padding-top: 0px;
+    margin-top: -40px;
+  
+
+}
+.h1{
+    color: rgb(75, 231, 14);
     
-    }
-    .our-service p>li{
-        padding-top: 15px;
-        font-size: 30px;
-    
-    }
-    .our-service p{
-        padding-top: 15px;
-        font-size: 20px;
-        padding-left: 20px;
-    }
+    margin-top: -130px;
+    font-family:mixed;
+    font-weight:bold; 
+
+}
+
+.label{
+    margin-bottom: 1em;
+    transition: all .3s;
+}
+.label{
+    font-size: 1em;
+    color:#aaa;
+    display: block;
+    opacity: 1;
+    transform: translateY(-1.25em);
+    transform-origin: 0 0;
+    transition: all .3s;
+}
+input{
+    background-color: rgb(22, 138, 158);
+    border-color: #ccc;
+    border-style: none none solid none;
+    transition: all .5s;
+    width: 100%;
+    padding: 5px;
+}
+.label{
+    background-color: rgb(22, 138, 158);
+    border-color: #ccc;
+    border-style: none none solid none;
+    transition: all .5s;
+    width: 100%;
+    padding: 5px;
+
+}
+.label::placeholder{
+    color: transparent;
+}
+textarea:focus{
+    box-shadow: none;
+    outline: none;
+    border-color: rgb(75, 231, 14);
+}
+textarea:focus + .label{
+    transform: translateY(-5.5em) scale(.8);
+}
+input::placeholder{
+    color: transparent;
+}
+input:focus{
+    box-shadow: none;
+    outline: none;
+    border-color: rgb(75, 231, 14);
+}
+input:focus + .label{
+    transform: translateY(-5.5em) scale(.8);
+}
+.placeholder:focus-within{
+    transform: scale(1.05,1.05);
+}

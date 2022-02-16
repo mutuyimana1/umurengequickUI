@@ -1,9 +1,9 @@
 import React from 'react';
-import "./signin.css"
-function signin(props) {
+import "./signin.css";
+function Signin(props) {
   return (props.trigger)?(
-  <div className='popup'>
-      <div className='popup-inner'>
+  <div className='popups'>
+      <div className='popups_inner'>
           <button className='close-btn' onClick={()=>props.setTrigger(false)}>close</button>
          {props.children}
       </div>
@@ -12,4 +12,5 @@ function signin(props) {
   ):"";
 }
 
-export default signin;
+export default Signin;
+

@@ -18,7 +18,7 @@ import AllShedule from "../views/dashboard/allSchedule"
 import Planner from "../components/planner";
 
 
-
+const isUserLoggedIn=localStorage.getItem("userLogedIn")
 const Index = () => {
   const currentUrl = useLocation.pathname;
 
@@ -39,7 +39,7 @@ const Index = () => {
       <Route path="/appointments" element={<AllAPPOINTMENT />} />
     </Routes>
 
-{/* { isUserLoggedIn && currentUrl.includes("/dash")?( */}
+{ isUserLoggedIn && currentUrl.includes("/dashboard")?(
   <DashboardLayout>
   <Routes>
   <Route path='/dashboard/schedule' element={<NewSchedule/>}/>
@@ -51,7 +51,7 @@ const Index = () => {
 ):(
   <></>
 )
-{/* //} */}
+} 
 </>  
   )
  
