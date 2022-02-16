@@ -19,20 +19,31 @@
 .header h1{
     color: rgb(75, 231, 14);
     font-size: 45px;
-    margin-left: 450px;
+    margin-left: -70px;
     margin-top: -95px;
     font-family:mixed;
     font-weight:bold;
+
 }
+
 .header h2{
     color:rgb(243, 246, 22);
     font-size: 15px;
     margin-top: 50px;
-    margin-left: 455px;
+    margin-left: 475px;
     margin-top: -40px;
     font-family: Racing Sans One;
     font-style: italic;
     font-weight: bold;
+    animation: movedown 1s linear 1;
+}
+@keyframes  movedown{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 a{
     color: rgb(75, 231, 14);
