@@ -5,7 +5,7 @@ import Planner from './planner';
 import './planner.css'
 import { Tabs } from 'antd';
 import UserForm from './userForm';
-import gahunda from './tab3';
+import Gahunda from './tab3';
 
 const { TabPane } = Tabs;
 
@@ -24,7 +24,7 @@ const PlannerLayout = () => {
         <UserForm />
       </TabPane>
       <TabPane tab="Tab 3" key="3">
-        <gahunda/>
+        <Gahunda/>
       </TabPane>
     </Tabs>
 

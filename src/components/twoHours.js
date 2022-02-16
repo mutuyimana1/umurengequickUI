@@ -4,7 +4,7 @@ import 'antd/dist/antd.css';
 
 const TwoHours=()=>{
     return(
-  <Row style={{backgroundColor:"#6ec0fabb", height: "14vh", width:"10%", fontSize:"x-large"}}>Staff meeting</Row>
+  <Row style={{backgroundColor:"#6ec0fabb", height: "14vh", fontSize:"x-large"}}>Staff meeting</Row>
 
     )
 }

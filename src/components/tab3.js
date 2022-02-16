@@ -15,6 +15,9 @@ const Gahunda=()=>{
   <div>
   <Row style={{marginLeft:"10px", height: "10vh" ,width:"10%", textAlign:"center"}}><b>MBERE</b></Row>
   <TwoHours/>
+  <br></br>
+  <TwoHours style={{backgroundColor:"green"}} > Guhura n'abaturage</TwoHours>
+
   </div>
   <Row style={{ height: "10vh", width:"10%"}}><b>KABIRI</b></Row>
   <Row style={{ marginLeft:"0px",height: "10vh", width:"10%"}}><b>GATATU</b></Row>
