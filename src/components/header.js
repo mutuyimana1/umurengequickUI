@@ -32,12 +32,8 @@ const Header = () => {
     console.log("search:", val);
   }
 
-  const onFinish = (values) => {
-
-
-  
-
-    console.log("Received values of form: ", values);
+  const onFinishSignUp = (values) => {
+ console.log("Received values of form: ", values);
     umurengeApis.createAccount(values).then((res) => {
       if (!res) {
         return notification.error({ message: "server is down" });
@@ -46,6 +42,30 @@ const Header = () => {
         return notification.success({
           message: "your account created successfully",
         });
+      } else {
+        return notification.error({
+          message: !res.data.error ? res.data.message : res.data.error,
+        });
+      }
+    });
+  };
+  const onFinish = (values) => {
+    console.log("Received values of form: ", values);
+    umurengeApis.userLogin(values).then((res) => {
+      if (!res) {
+        return notification.error({ message: "server is down" });
+      }
+      if (res.status === 200) {
+        console.log(res.data.data);
+        if(res.data.data.role==="admin"){
+          localStorage.setItem("userLogedIn",true);
+          navigate("/dashboard");
+        }
+        else if(res.data.data.role==="user"){
+          localStorage.setItem("userLogedIn",true);
+          navigate("/dashboard");
+        }
+        
       } else {
         return notification.error({
           message: !res.data.error ? res.data.message : res.data.error,
@@ -124,17 +144,17 @@ const Header = () => {
           >
             <div style={{ marginTop: "40px" }}>
               <Form.Item
-                name="Username"
+                name="email"
                 rules={[
                   {
                     required: true,
-                    message: "Please input your Username!",
+                    message: "Please input your email!",
                   },
                 ]}
               >
                 <Input
                   prefix={<UserOutlined className="site-form-item-icon" />}
-                  placeholder="username"
+                  placeholder="email"
                 />
               </Form.Item>
               <Form.Item
@@ -170,7 +190,7 @@ const Header = () => {
 
               <Form.Item>
                 <Button
-                  href="/dashboard"
+                 
                   type="primary"
                   htmlType="submit"
                   className="login-form-button"
@@ -190,7 +210,7 @@ const Header = () => {
           </Form>
         </Signin>
         <Signup trigger={SignupPopup} setTrigger={setSignupPopup}>
-          <Form {...layout} name="nest-messages" onFinish={onFinish}>
+          <Form {...layout} name="nest-messages" onFinish={onFinishSignUp}>
             <Form.Item
               name="firstName" 
               label="firstName"
@@ -267,24 +287,7 @@ const Header = () => {
                 <Option value="not prefer to say">Not prefer to say</Option>
               </Select>
             </Form.Item>
-            
-      <Form.Item
-        name="gender"
-        label="Gender"
-        rules={[
-          {
-            required: true,
-            message: 'Please select gender!',
-          },
-        ]}
-      >
-        <Select placeholder="select your gender">
-          <Option value="male">Male</Option>
-          <Option value="female">Female</Option>
-          <Option value="other">Other</Option>
-          <Option value="not prefer to say">Not prefer to say</Option>
-        </Select>
-      </Form.Item>
+      
             <Form.Item name="Role" label="Role"> 
             {/* removed braces holding "role", the name */}
               <Select

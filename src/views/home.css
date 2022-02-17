@@ -4,12 +4,13 @@
     padding:0
 }
 .all-content{
-    background-image: url(../assets/images/house3.jpeg);
+    background-image: url(../assets/images/women.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 80%;
-    height: 140vh;
+    background-color: black;
+    height: 120vh;
 }
+
 .semi-home{
     display: flex;
      background-color:rgba(100, 185, 255, 0.486);
@@ -24,7 +25,7 @@
     height: 30vh;
     padding: 50px;
     margin-left: 100px;
-    margin-top:50px
+    margin-top:290px
     
 }
 .container{
@@ -59,15 +60,16 @@
     font-size: large;
 }
 .search{
-    margin-left: 800px;
+    margin-left: 750px;
     margin-top: -10px;
     margin-bottom: 30px;
     background-clip: border-box;
     background-color: rgb(22, 138, 158);
-    padding: auto;
-    border-radius: 6px;
-    width: auto;
-    height: 5vh;
+    padding: 13px;
+    border-radius: 15px;
+    width: 12%;
+    height: 8vh;
+    box-shadow: 10px 0px 3px 0px white;
 
     animation-name: button;
     animation-duration: 3s;
@@ -92,5 +94,6 @@
     font-weight: bold;
     /* color: rgb(75, 231, 14); */
     padding-left: 6px;
+    color: white;
 }
 

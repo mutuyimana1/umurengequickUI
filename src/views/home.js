@@ -9,9 +9,7 @@ import { Input, Space } from "antd";
 import SampleServices from "../assets/constants/home.json";
 import ReactDOM from "react-dom";
 import "antd/dist/antd.css";
-import Carousel from "react";
 
-import { Modal } from "antd";
 import { Typography, Switch } from "antd";
 
 const { Paragraph, Text } = Typography;
@@ -40,13 +38,16 @@ const Home = () => {
 <div className="all-content">
 
         <Search
-          style={{ width: "45%", padding: "55px", paddingRight: "30px" }}
+          style={{ width: "45%", padding: "55px", paddingRight: "30px",marginLeft:"30%", color:"red"}}
           placeholder="Shakira hano"
           enterButton="Shakisha"
           size="large"
           suffix={suffix}
           onSearch={onSearch}
         />
+         <div className="search">
+          <h2>Menya byinshi...</h2>
+        </div>
         <div style={{ marginBottom: "100px" }} className="container">
           {/* <Carousel> */}
 
@@ -86,11 +87,9 @@ const Home = () => {
           </div>
           ))}
           </div>
-        <div className="search">
-          <h2>Menya byinshi...</h2>
-        </div>
+       
 
-        <div className="semi-home" >
+        {/* <div className="semi-home" >
           <div className="leftside">
             <img
               src={paragraphPhoto}
@@ -122,7 +121,7 @@ const Home = () => {
               nga y’u Rwanda.{" "}
             </p>
           </div>
-        </div>
+        </div> */}
       
         </div>
         </div>
