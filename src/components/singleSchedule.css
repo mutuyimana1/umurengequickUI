@@ -7,6 +7,13 @@
   font-size: x-large;
   box-shadow:3px 3px rgb(19, 18, 18);
   background-color: beige;
+  
+  justify-content: center;
+  transition: 1s;
+}  
+
+.leaders-card:hover{
+   transform: scale(1.2);
 }
 .flexing{
    display: flex;

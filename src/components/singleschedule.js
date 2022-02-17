@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./singleSchedule.css"
+import "./singleSchedule.css";
 
 import { Drawer } from "antd";
 import 'antd/dist/antd.css';
@@ -23,12 +23,10 @@ const SingleSchedule = ({ leader }) => {
             
             <div className="leaders-card" >
                 <div className="profile" >
-                    <img src={leader?.profile} ></img> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src={leader?.profile} ></img> 
                     <div>
                 <h5><b> {leader?.title}</b></h5>
-
-                <h5>Amazina : {leader?.name}</h5>
-                
+                <h5>Amazina : {leader?.name}</h5>                
                 <h5>numero ya telephone:{leader?.phone}</h5>
                 </div>
                 </div>
