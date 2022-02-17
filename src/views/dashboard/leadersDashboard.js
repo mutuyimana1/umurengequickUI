@@ -4,7 +4,7 @@ import { EyeOutlined, EditOutlined, DeleteOutlined } from "@ant-design/icons"
 import leadersInfos from "../../assets/constants/leaders.json"
 import usersInfos from "../../assets/constants/users.json"
 import { Table, Tag, Space } from 'antd';
-import NewLeader from "../../components/newLeader";
+
 import { Drawer } from "antd";
 
 

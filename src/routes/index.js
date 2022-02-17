@@ -4,7 +4,6 @@ import Home from "../views/home";
 import Services from "../views/services";
 import Header from "../components/header";
 import ContactUs from "../views/contactUs";
-
 import Schedule from "../views/Schedule";
 
 import AllBookings from "../views/dashboard/adminDashboard";
@@ -29,7 +28,6 @@ const Index = () => {
     <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/schedule" element={<Schedule />} />
-      <Route path="/planner" element={<Planner/>} />
       <Route path="/serivisi" element={<Services />} />
       {/* <Route path='/header' element={<Header/>}/> */}
       <Route path="/contactUs" element={<ContactUs />} />

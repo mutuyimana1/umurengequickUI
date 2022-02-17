@@ -4,16 +4,11 @@ import { EyeOutlined, EditOutlined, DeleteOutlined } from "@ant-design/icons"
 import leadersInfos from "../../assets/constants/leaders.json"
 import usersInfos from "../../assets/constants/users.json"
 import { Table, Tag, Space } from 'antd';
-
+import NewLeader from "../../components/tab3";
 import { Drawer } from "antd";
 
 
 const Column = [
-  {
-    title: 'EMAIL',
-    dataIndex: 'email',
-    key: 'email',
-  },
   {
     title: 'FIRST NAME',
     dataIndex: 'firstName',
@@ -24,19 +19,31 @@ const Column = [
     dataIndex: 'lastName',
     key: 'lastname',
   },
-  
+  {
+    title: 'EMAIL',
+    dataIndex: 'email',
+    key: 'email',
+  },
   {
     title: 'ADDRESS',
     dataIndex: 'address',
     key: 'address',
   },
-  
+  {
+    title: 'ID',
+    dataIndex: 'Identification_card',
+    key: 'id',
+  },
   {
     title: 'PHONE NUMBER',
     dataIndex: 'phone_number',
     key: 'phone_number',
   },
-  
+  {
+    title: 'GENDER',
+    dataIndex: 'gender',
+    key: 'gender',
+  },
   {
     title: 'Action',
     dataIndex: 'action',
@@ -52,7 +59,11 @@ const Column = [
 
 ];
 const Column1 = [
-  
+  {
+    title: 'DESCRIPTION / RESPONSIBILITY',
+    dataIndex: 'description',
+    key: 'first-name',
+  },
   {
     title: 'TITLE',
     dataIndex: 'title',
@@ -103,7 +114,7 @@ const AllBookings = () => {
   return (
     <>
       <Drawer placement="right" visible={DrawerVisible} width={1000} onClose={() => closedrawerVisible()}>
-        {/* <NewLeader /> */}
+        <NewLeader />
       </Drawer>
       <Dashlayout>
         <h1>USERS' CREDENTIALS</h1>
