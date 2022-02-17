@@ -35,9 +35,10 @@ const Index = () => {
       <Route path="/dashboard" element={<AllBookings />} />
       <Route path="/calendar" element={<Calendar />} />
       <Route path="/appointments" element={<AllAPPOINTMENT />} />
+      
     </Routes>
 
-{ isUserLoggedIn && currentUrl.includes("/dashboard")?(
+{ isUserLoggedIn && currentUrl.includes("")?(
   <DashboardLayout>
   <Routes>
   <Route path='/dashboard/schedule' element={<NewSchedule/>}/>

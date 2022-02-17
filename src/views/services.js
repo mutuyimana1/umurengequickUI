@@ -26,15 +26,7 @@ const Services = () => {
                   {service.serviceName}
                 </h3>
                 <Paragraph
-                  ellipsis={
-                    true
-                      ? {
-                        rows: 1,
-                        expandable: false,
-                        symbol: "more",
-                      }
-                      : false
-                  }
+                 
                 >
                   {service.servicesDescription}{" "}
                 </Paragraph>

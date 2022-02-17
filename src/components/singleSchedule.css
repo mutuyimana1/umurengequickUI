@@ -1,39 +1,32 @@
-.leaders-card{    
-   margin: 20px;   
-   height: 42vh;
-   
+.leaders-card {
+  margin: 20px;
+  height: 42vh;
+  width: 45%;
+  /* display: flex; */
+
   border: 1px solid black;
-  padding: 20px; 
+  padding: 20px;
   font-size: x-large;
-  box-shadow:3px 3px rgb(19, 18, 18);
-  background-color: beige;
-  
-  justify-content: center;
-  transition: 1s;
-}  
+  box-shadow: 3px 3px rgb(19, 18, 18);
+  background-color: white;
+}
+.flexing {
+  display: flex;
+}
+.leaders-button {
+  border-radius: 10%;
 
-.leaders-card:hover{
-   transform: scale(1.2);
+  float: right;
+  /* margin: 20px; */
+  background-color: rgba(48, 38, 182, 0.151);
+  padding: auto;
+  width: 40%;
+  height: 5vh;
 }
-.flexing{
-   display: flex;
-  
+.profile {
+  display: flex;
+  width: 100%;
+  /* height: 20vh; */
+  font-size: x-large;
+  padding: 2px;
 }
-.leaders-button{
-   border-radius: 10%;
-
-   float: right;
-   margin: 20px;
-   background-color: rgba(48, 38, 182, 0.151);
-   padding: auto;
-   /* width: auto; */
-   height: 5vh;
-}
-.profile{
-   display: flex;
-   width :20%;
-   margin: 20px;
-  height: 20vh;
-  font-size:x-large;   
-}
-
