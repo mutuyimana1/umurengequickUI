@@ -36,7 +36,7 @@ const DashboardLayout=({children})=>{
             </Menu.Item>
             <Menu.Item key="3" icon={<VideoCameraOutlined style={{fontSize: "25px"}} />}onClick={()=>
             localStorage.removeItem("")}>
-             <Link to="#"style={{fontSize:'23px', padding:"30px"}} >view online user</Link>
+             <Link to="/dashboard/onlineuser"style={{fontSize:'23px', padding:"30px"}} >view online user</Link>
             </Menu.Item>
             <Menu.Item key="4" icon={<UploadOutlined style={{fontSize: "25px", padding:"30px"}} />}onClick={()=>
            localStorage.removeItem("userLogedIn")}>

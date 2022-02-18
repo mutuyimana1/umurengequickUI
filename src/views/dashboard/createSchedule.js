@@ -1,12 +1,13 @@
 import React from "react";
 import {Form, Input,DatePicker,Space,Button, InputNumber} from "antd";
+import DashboardLayout from "../../components/DashboardLayout";
 import "./shedule.css"
 const NewSchedule=()=>{
     const onFinish=(values)=>{
         console.log(values)
     }
     return(
-
+<DashboardLayout>
         <Form onFinish={onFinish} style={{width:"70%",height:"70vh",marginLeft:"200px",padding:"40px",boxShadow:"3px 0px 2px 1px ", }}>
             <Form.Item
             name="user"
@@ -65,6 +66,7 @@ const NewSchedule=()=>{
             <Button htmlType="submit" type="primary" style={{width:"100px", backgroundColor:"rgb(22, 138, 158)"}}>register</Button>
 
         </Form>
+        </DashboardLayout>
     )
 }
 
