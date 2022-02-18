@@ -50,12 +50,15 @@
     transition-property: all;
     transition-duration: 2s;
     box-shadow: 1px 0px 1px 5px gray;
+    transition: 1s;
 }
 .card:hover{
     background-color: rgb(180, 214, 166);
     transition:2s;
     color: white;
     /* transform:rotateX(180deg) */
+    transform: scale(0.9);
+    
     
 }
 .card-content{

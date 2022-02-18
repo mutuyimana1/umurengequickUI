@@ -18,9 +18,7 @@ const AboutUs = () => {
             <div className="imageSlider" style={{background:"aliceblue"}}>
           <div className="hh">
         <h style={{ fontSize:"40px", color:"black", textDecoration:"bold",paddingLeft:"120px" }}> SURA IBIKORWA BY'UMURENGE!</h>
-       <marquee><p style={{ marginBottom:"25px", fontSize:"30px"}}>Akarere ka Nyarugenge ni kamwe mu Turere 3 tugize
-        Umujyi wa Kigali, gafite Imirenge 10, Utugari 47 n' Imidugudu 350. Akarere ka Nyarugenge gafite
-        ubuso bungana na 134 Km2 nkuko bigaragazwa</p></marquee>
+       <marquee><p style={{ marginBottom:"25px", fontSize:"30px"}}>Serivisi zitangirwa kumurenge nizi zikurikira menya byinshi kuri izo servisi, turi hano kubwawe kora gahunda kuyo ukenye mu gihe gito</p></marquee>
         </div>
         <br></br><br></br><br></br><br></br><br></br>
    
