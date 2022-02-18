@@ -39,15 +39,16 @@ const SingleSchedule = ({ leader }) => {
             <h5>Amazina : {leader?.name}</h5>
 
             <h5>numero ya telephone:{leader?.phone}</h5>
-          </div>
-        </div>
-        <br></br>
-        <h5>Akazi: {leader?.description}</h5>
+            <h5>Akazi: {leader?.description}</h5>
         {/* <div onClose={() => closedrawerVisible()} className="leaders-button"> */}
           <button onClick={() => handleclickDrawerVisible()} >
             {" "}
             Hitamo umunsi
           </button>
+          </div>
+        </div>
+        
+       
         {/* </div> */}
       </div>
       {/* </div> */}
