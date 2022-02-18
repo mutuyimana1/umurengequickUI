@@ -1,6 +1,7 @@
 import axios from "axios";
 import store from "store";
-const UMURENGE_QUICK_APIS_URL = "http://localhost:3030";
+// const UMURENGE_QUICK_APIS_URL = "http://localhost:3030";
+const UMURENGE_QUICK_APIS_URL = "https://umurenge-quick.herokuapp.com/"
 
 var config = {
   headers: {

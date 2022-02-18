@@ -6,7 +6,7 @@ import { EyeOutlined, EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import UserContent from "../../assets/constants/users.json";
 import Allschedule from "../../assets/constants/shedules.json";
 import umurengeApis from "../../services/umurengeApis";
-
+import DashboardLayout from "../../components/DashboardLayout";
 const AllUsers = () => {
   const [allUsersData, setAllUsersData] = useState([]);
 const [isDrawerVisible, setIsDrawerVisible]=useState(false);
@@ -115,7 +115,7 @@ const columnSecond = [
 
 
   return (
-    <>
+    <DashboardLayout>
       <h3 style={{ textAlign: "center", fontSize: "40px" }}>AllUsers</h3>
 
 
@@ -133,7 +133,7 @@ const columnSecond = [
         width="50%"
 
        </Drawer>
-    </>
+    </DashboardLayout>
 
    
   );

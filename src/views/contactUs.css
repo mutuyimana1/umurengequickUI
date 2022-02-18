@@ -9,7 +9,7 @@
     width: 50%;
     height:560px;
     text-align: center;
-    
+    margin-left: 100px;
 }
 .contactContainer{
     background-image: url("../assets/images/house3.jpeg");
@@ -25,12 +25,13 @@
     align-content:flex-end;
     height: auto;
     /* margin-left: 78px; */
-   background-color: skyblue;
+   background-color: rgba(22, 138, 158, 0.698);
    margin-top: -30px;
+   
 }
 
 .home-container button{
-    color: rgb(22, 138, 158);
+    /* color: rgb(22, 138, 158); */
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     text-align: center;

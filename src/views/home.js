@@ -46,7 +46,7 @@ const Home = () => {
           onSearch={onSearch}
         />
          <div className="search">
-          <h2>Menya byinshi...</h2>
+         <a href="/aboutus"> <h2>Menya byinshi...</h2></a>
         </div>
         <div style={{ marginBottom: "100px" }} className="container">
           {/* <Carousel> */}
@@ -73,16 +73,17 @@ const Home = () => {
                 >
                   {service.servicesDescription}{" "}
                 </Paragraph>
-                
-                <i>
-                  <b>
-                    Ibikurikira{" "}
+                </h2>
+                <div style={{textAlign:"center", fontSize:"25px"}}>
+                <i >
+                  <b >
+                  <a style={{color:"black",textAlign:"center", fontSize:"25px"}} href="/serivisi"> Ibikurikira{" "}</a> 
                     <ArrowRightOutlined
                       style={{ width: "20%", fontSize: "26px" }}
                     />
                   </b>
                 </i>
-                </h2>
+                </div>
             </item>
           </div>
           ))}

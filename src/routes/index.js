@@ -5,16 +5,18 @@ import Services from "../views/services";
 import Header from "../components/header";
 import ContactUs from "../views/contactUs";
 import Schedule from "../views/Schedule";
-
+import AboutUs from "../views/aboutus";
 import AllBookings from "../views/dashboard/adminDashboard";
 import Calendar from "../components/calendar";
 import AllAPPOINTMENT from "../views/dashboard/leadersDashboard";
 import DashboardLayout from "../components/DashboardLayout"
 import NewSchedule from "../views/dashboard/createSchedule"
 import AllShedule from "../views/dashboard/allSchedule"
-
+import OnlineUser from "../views/dashboard/onlineuser"
+import Calend from "../views/calendar"
 
 import Planner from "../components/planner";
+// import AboutUs from "../views/aboutus";
 
 
 const isUserLoggedIn=localStorage.getItem("userLogedIn")
@@ -34,15 +36,19 @@ const Index = () => {
       <Route path="/header" element={<Header />} />
       <Route path="/dashboard" element={<AllBookings />} />
       <Route path="/calendar" element={<Calendar />} />
+      <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/appointments" element={<AllAPPOINTMENT />} />
-      
+      <Route path='/dashboard/schedule' element={<NewSchedule/>}/>
+      <Route path='/dashboard/allschedule' element={<AllShedule/>}/>
+      <Route path='/dashboard/onlineuser' element={<OnlineUser/>}/>
+      <Route path='/calendars' element={<Calend/>}/>
     </Routes>
 
 { isUserLoggedIn && currentUrl.includes("")?(
   <DashboardLayout>
   <Routes>
-  <Route path='/dashboard/schedule' element={<NewSchedule/>}/>
-      <Route path='/dashboard/allschedule' element={<AllShedule/>}/>
+
+      
   </Routes>
 
 </DashboardLayout>
