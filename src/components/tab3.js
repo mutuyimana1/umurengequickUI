@@ -1,69 +1,68 @@
-import React from "react";
-import TwoHours from "./twoHours";
-import { Row, Col } from 'antd';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
+import { Menu, Dropdown } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
+import { Button, notification, Space } from 'antd';
 
- 
-const Gahunda=()=>{
-    return(
-        <div style={{fontSize:"x-large", marginLeft:"20px"}}>
-    <Col >
-    <div style={{display:"flex"}}>  
-    
-  <Row style={{ height: "5vh", width:"10%"}}><b>ISAHA /KUWA</b></Row>
 
-  <div>
-  <Row style={{marginLeft:"10px", height: "10vh" ,width:"10%", textAlign:"center"}}><b>MBERE</b></Row>
-  <TwoHours/>
-  <br></br>
-  <TwoHours style={{backgroundColor:"green"}} > Guhura n'abaturage</TwoHours>
+const openNotificationWithIcon = type => {
+  notification[type]({
+    message: 'Urakoze guhitamo',
+    description:
+      'Musabwe Kuza mbere, gutinda bibarwa nko kutitabira',
+  });
+};
+const { SubMenu } = Menu;
 
-  </div>
-  <Row style={{ height: "10vh", width:"10%"}}><b>KABIRI</b></Row>
-  <Row style={{ marginLeft:"0px",height: "10vh", width:"10%"}}><b>GATATU</b></Row>
-  <Row style={{marginLeft:"0px", height: "10vh", width:"10%"}}><b>KANE</b></Row>
-  <Row style={{marginLeft:"0px", height: "10vh", width:"10%"}}><b>GATANU</b></Row>
-  
-  </div>
-   </Col>
-  <div style={{}}>
-   
-   <Col >  
-  <Row style={{ height: "5vh", width:"10%",marginTop:"-3vh", textAlign:"right"}}><b>8:00</b></Row>
-  </Col>
-  <br></br>
-   <Col >  
-  <Row style={{ height: "5vh", width:"10%"}}><b>9:00</b></Row>
-  </Col> <br></br>
-   <Col >  
-  <Row style={{ height: "5vh", width:"10%"}}><b>10:00</b></Row>
-  </Col> <br></br>
-   <Col >  
-  <Row style={{ height: "5vh", width:"10%"}}><b>11:00</b></Row>
-  </Col> <br></br>
-   <Col >  
-   <div style={{display:"flex"}}>  
+const menu = (
+  <Menu>
+    <Menu.ItemGroup title="Iki cyumweru (14/02 - 20/02)">
+      
+      <SubMenu title="Kuwa mbere">
+      <Menu.Item disabled>
+        <p>8:00 - 9:00</p>
+        <p>Inama y'umunsi</p>
+      </Menu.Item>
+      <Menu.Item>
+      <p>9:00 - 12:00</p>
+      <p>Kwakira Abaturage</p>
+      <Button onClick={() => openNotificationWithIcon('success')}>Mpisemo</Button>
 
-  <Row style={{ height: "5vh", width:"10%"}}><b>12:00</b></Row>
-  <Row style={{ backgroundColor:"rgb(231, 223, 211)",height: "5vh", marginLeft:"2vh",width:"38%"}}><b>BREAK</b></Row>
-  </div>
-  </Col> <br></br>
+      </Menu.Item>
+    </SubMenu>
+      <Menu.Item>Kuwa Kabiri</Menu.Item>
+      <Menu.Item>Kuwa Gatatu</Menu.Item>
+      <Menu.Item>Kuwa Kane</Menu.Item>
+      
 
-   <Col >  
-  <Row style={{ height: "5vh", width:"10%"}}><b>13:00</b></Row>
-  </Col> <br></br>
-   <Col >  
-  <Row style={{height: "5vh", width:"10%"}}><b>14:00</b></Row>
-  </Col> <br></br>
-   <Col >  
-  <Row style={{height: "5vh", width:"10%"}}><b>15:00</b></Row>
-  </Col><br></br>
-  <Col >  
-  <Row style={{height: "5vh", width:"10%"}}><b>16:00</b></Row>
-  </Col>
-  </div>
-  
-   </div>
-    )
-}
-export default Gahunda;
+    </Menu.ItemGroup>
+    <SubMenu title="sub menu">
+      <Menu.Item disabled>
+        <p>8:00 - 9:00</p>
+        <p>Inama y'umunsi</p>
+      </Menu.Item>
+      <Menu.Item>
+      <p>9:00 - 12:00</p>
+      <p>Kwakira Abaturage</p>
+      <p>Available seats: 5/10</p>
+
+      </Menu.Item>
+    </SubMenu>
+    <SubMenu title="Kuwa Gatandatu" disabled>
+      <Menu.Item>5d menu item</Menu.Item>
+      <Menu.Item>6th menu item</Menu.Item>
+    </SubMenu>
+  </Menu>
+);
+
+const Days=()=>{
+  return(
+  <Dropdown overlay={menu}>
+    <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+      Kanda hano maze uhitemo <DownOutlined />
+    </a>
+  </Dropdown>
+   )
+  }
+  export default Days;

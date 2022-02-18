@@ -5,7 +5,7 @@ import Planner from './planner';
 import './planner.css'
 import { Tabs } from 'antd';
 import UserForm from './userForm';
-import Gahunda from './tab3';
+import Days from './tab3';
 
 const { TabPane } = Tabs;
 
@@ -18,18 +18,16 @@ const PlannerLayout = () => {
   return (
     <Tabs defaultActiveKey="1" onChange={callback}>
       <TabPane tab="calendar" key="1" style={{ textAlign: "center" }}>
-        <Planner />
+        {/* <Planner /> */}
+        <Days/>
       </TabPane>
       <TabPane tab="booking" key="2">
         <UserForm />
       </TabPane>
-      <TabPane tab="Tab 3" key="3">
-        <Gahunda/>
+      <TabPane tab="Number 3" key="3">
+        
       </TabPane>
     </Tabs>
-
-
-
   )
 }
 export default PlannerLayout;
