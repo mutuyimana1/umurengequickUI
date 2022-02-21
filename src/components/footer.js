@@ -19,7 +19,7 @@ const Footer = () => {
       <div
         style={{
           position: "relative",
-          backgroundColor: "rgb(22, 138, 158)",
+    
           height: "55vh",
           marginTop: "-30px",
         }}

@@ -17,7 +17,7 @@ const AboutUs = () => {
 
             <div className="imageSlider" style={{background:"aliceblue"}}>
           <div className="hh">
-        <h style={{ fontSize:"40px", color:"black", textDecoration:"bold",paddingLeft:"120px" }}> SURA IBIKORWA BY'UMURENGE!</h>
+        <h1 style={{ fontSize:"40px", color:"black", textDecoration:"bold",paddingLeft:"120px" }}> SURA IBIKORWA BY'UMURENGE!</h1>
        <marquee><p style={{ marginBottom:"25px", fontSize:"30px"}}>Serivisi zitangirwa kumurenge nizi zikurikira menya byinshi kuri izo servisi, turi hano kubwawe kora gahunda kuyo ukenye mu gihe gito</p></marquee>
         </div>
         <br></br><br></br><br></br><br></br><br></br>
@@ -41,7 +41,7 @@ const AboutUs = () => {
  
 
         </div><br></br><br></br><br></br><br></br>
-      
+      <div style={{height:"200vh"}}>
         <div className="summary" style={{display:"flex"}}>
           <div className="image">
           <img style={{width:"80%",borderRadius:"30px",marginLeft:"20px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuRMRu8EG_oX7tmQVb-zkWS44j1SBhwPIIDA&usqp=CAU"/>
@@ -147,7 +147,7 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        
+        </div>
     
                    
               
