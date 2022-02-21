@@ -6,7 +6,6 @@ import Header from "../components/header";
 import ContactUs from "../views/contactUs";
 import Schedule from "../views/Schedule";
 import AboutUs from "../views/aboutus";
-import AllBookings from "../views/dashboard/adminDashboard";
 import Calendar from "../components/calendar";
 import AllAPPOINTMENT from "../views/dashboard/leadersDashboard";
 import DashboardLayout from "../components/DashboardLayout"
@@ -34,7 +33,7 @@ const Index = () => {
       {/* <Route path='/header' element={<Header/>}/> */}
       <Route path="/contactUs" element={<ContactUs />} />
       <Route path="/header" element={<Header />} />
-      <Route path="/dashboard" element={<AllBookings />} />
+      <Route path="/dashboard" element={<DashboardLayout />} />
       <Route path="/calendar" element={<Calendar />} />
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/appointments" element={<AllAPPOINTMENT />} />

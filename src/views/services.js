@@ -41,7 +41,7 @@ const Services = (data) => {
             <div className="card">
               <div className="card-content">
                 <h3>
-                  <EnvironmentOutlined type="primary" onClick={showModal}
+                  <EnvironmentOutlined 
                     style={{ marginRight: "50px", color: "green" }}
                   />
                   {service.serviceName}
@@ -52,7 +52,7 @@ const Services = (data) => {
                   {service.servicesDescription}{" "}
                 </Paragraph>
                 <i>
-                <p >ibikurikira...</p><b>
+                <p type="primary" onClick={showModal}>ibikurikira... </p><b>
                     {/* <ArrowRightOutlined
                       style={{ width: "20%", fontSize: "26px" }}
                     /> */}
@@ -69,9 +69,9 @@ const Services = (data) => {
         Open Modal
       </Button> */}
       <Modal title="Urashaka gukora gahunda?" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-        <h3>kora gahunda</h3>
+       <a href="schedule" style={{paddingTop:"20px"}}> <h3>kora gahunda</h3></a>
         <h3></h3>
-        <p>Some contents...</p>
+       <a href="/aboutus"> <p>Menya byishi</p></a>
       </Modal>
     </>
     </HomeLayout>

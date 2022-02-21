@@ -4,10 +4,10 @@
     padding:0
 }
 .all-content{
-    background-image: url(../assets/images/women.jpg);
+    /* background-image: url(../assets/images/women.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: black;
+    /* background-color: black; */
     height: 120vh;
 }
 
@@ -17,22 +17,27 @@
      width: 100%;
 }
 .home-igenamigambi{
-    background-color: rgb(255, 255, 255);
+    background-color:#eee;
+    padding:20px;
     background-size: fixed;
     border-radius: 10px;
     box-shadow: 0 0 5px 5px;
-    width: 25%;
+    width: 27%;
     height: 30vh;
     /* padding: 50px; */
-    margin-left: 100px;
-    margin-top:290px
+    margin-left: 70px;
+    margin-top:200px;
+    transition:1s;
     
+}
+.home-igenamigambi:hover{
+    transform: scale(1.2);
 }
 .home-igenamigambi h1{
     padding-top: 7px;
 }
 .home-igenamigambi h2{
-    padding: 15px 12px 10px;
+    padding: -4px ;
     font-size: 25px;
     
 }
@@ -72,17 +77,18 @@
     padding-top: 20px;
     font-size: large;
 }
-.search{
-    margin-left: 550px;
+.btn{
+    margin-left: 590px;
     margin-top: -10px;
     margin-bottom: 30px;
     background-clip: border-box;
-    background-color: rgb(22, 138, 158);
+    background-color:rgb(5, 5, 95);
     /* padding: 13px; */
     border-radius: 15px;
-    width: 15%;
-    height: 8vh;
-    box-shadow: 10px 0px 3px 0px white;
+    width: 13%;
+    color:#fff;
+    height: 6vh;
+    box-shadow: 3px 0px 3px 0px white;
 
     animation-name: button;
     animation-duration: 3s;
@@ -99,15 +105,14 @@
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-.search:hover{
+.btn:hover{
     transform:rotateY(180deg)
 }
 
-.search h2{
+ a{
     font-weight: bold;
-    /* color: rgb(75, 231, 14); */
-    padding-left: 5px;
+    padding-left: 0;
     color: white;
-    font-size: 16px;
+    /* font-size: 16px; */
 }
 
