@@ -55,9 +55,7 @@ const AboutUs = () => {
              
               genge gafite ubuso ugana na 134 Km2 nkuko bigaragazwa n'ibarura
             
-              ry'abaturage ryakozwe mu mwaka wa 2012 Akarere ka Nyarugenge gaf
-              
-              Abaturage : 
+              ry'abaturage  
               
              
             </p>
@@ -76,9 +74,7 @@ const AboutUs = () => {
              
               genge gafite ubuso ugana na 134 Km2 nkuko bigaragazwa n'ibarura
             
-              ry'abaturage ryakozwe mu mwaka wa 2012 Akarere ka Nyarugenge gaf
-              
-              Abaturage  
+              ry'abaturage  
               
              
             </p>
@@ -97,9 +93,7 @@ const AboutUs = () => {
              
               genge gafite ubuso ugana na 134 Km2 nkuko bigaragazwa n'ibarura
             
-              ry'abaturage ryakozwe mu mwaka wa 2012 Akarere ka Nyarugenge gaf
-              
-              Abaturage
+              ry'abaturage 
               
              
             </p>
@@ -118,9 +112,7 @@ const AboutUs = () => {
              
               genge gafite ubuso ugana na 134 Km2 nkuko bigaragazwa n'ibarura
             
-              ry'abaturage ryakozwe mu mwaka wa 2012 Akarere ka Nyarugenge gaf
-              
-              Abaturage
+              ry'abaturage
               
              
             </p>
@@ -137,11 +129,7 @@ const AboutUs = () => {
              
               ,gafite Imirenge 10, Utugari 47 n' Imidugudu 350. Akarere ka Nya
              
-              genge gafite ubuso ugana na 134 Km2 nkuko bigaragazwa n'ibarura
-            
-              ry'abaturage ryakozwe mu mwaka wa 2012 Akarere ka Nyarugenge gaf
-              
-              Abaturage 
+              genge gafite ubuso ugana na 134 Km2 nkuko bigaragazwa 
               
              
             </p>
