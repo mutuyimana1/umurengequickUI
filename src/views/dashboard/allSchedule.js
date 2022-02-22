@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Table, Space, Drawer, Skeleton, notification } from "antd";
+import { Table, Space, Drawer, Skeleton, notification,Card } from "antd";
 import "antd/dist/antd.css";
 import "./shedule.css";
 import { EyeOutlined, EditOutlined, DeleteOutlined } from "@ant-design/icons";
@@ -117,22 +117,32 @@ const columnSecond = [
   return (
     <DashboardLayout>
       <h3 style={{ textAlign: "center", fontSize: "40px" }}>AllUsers</h3>
-
-
-      <Table columns={column} dataSource={allUsersData} />
+      {allUsersData.length == 0 ? (
+          <Skeleton active></Skeleton>
+        ) : (
+          <Table style={{marginLeft:0}} columns={column} dataSource={allUsersData} />
+        )}
       <h3 style={{ textAlign: "center", fontSize: "40px" }}>Schedules</h3>
       <Table
         columns={columnSecond}
         dataSource={Allschedule}
         style={{ border: "none" }}
       />
-       <Drawer>
-       placement="left"
+       <Drawer
+        placement="left"
         onClose={() => setIsDrawerVisible(false)}
         visible={isDrawerVisible}
         width="50%"
-
-       </Drawer>
+      >
+        <Card>
+          <Space>
+            <h4>
+              Names: {user?.firstName} {user?.lastName}{" "}
+             <br/> gender:{user?.gender}
+            </h4>
+          </Space>
+        </Card>
+      </Drawer>
     </DashboardLayout>
 
    
