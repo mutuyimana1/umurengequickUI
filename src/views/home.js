@@ -40,14 +40,13 @@ const Home = () => {
         <Search
           style={{ width: "45%", padding: "55px", paddingRight: "30px",marginLeft:"30%", color:"red"}}
           placeholder="Shakira hano"
-          enterButton="Shakisha"
-          size="large"
-          suffix={suffix}
+         
+          // suffix={suffix}
           onSearch={onSearch}
         />
-         <div className="search">
-         <a href="/aboutus"> <h2>Menya byinshi...</h2></a>
-        </div>
+        
+      <a href="/aboutus">  <button className="btn" style={{borderRadius: "15px",marginTop:"-10px",marginRight:"600px",width:"150px",height:"7vh",boxShadow: "3px 0px 3px 0px white"}}><b style={{Color:"black"}}>Menya byinshi</b></button>  </a>
+        
         <div style={{ marginBottom: "100px" }} className="container">
           {/* <Carousel> */}
 
@@ -90,39 +89,7 @@ const Home = () => {
           </div>
        
 
-        {/* <div className="semi-home" >
-          <div className="leftside">
-            <img
-              src={paragraphPhoto}
-              alt=""
-              style={{ height: "40vh", width: "100%"}}
-            />
-          </div>
-          <div className="rightside">
-            <p>
-              {" "}
-              Akarere ka Nyarugenge ni kamwe mu Turere 3 tugize Umujyi wa Kigali
-              <br></br>
-              ,gafite Imirenge 10, Utugari 47 n' Imidugudu 350. Akarere ka Nya
-              <br></br>
-              genge gafite ubuso ugana na 134 Km2 nkuko bigaragazwa n'ibarura
-              <br></br>
-              ry'abaturage ryakozwe mu mwaka wa 2012 Akarere ka Nyarugenge gaf
-              <br></br>
-              Abaturage : 284,561 abagabo 148,132 abagore 136,429 ,Ubucucike :
-              <br></br>
-              2,149 /km <br /> Kuri uyu wa Gatanu tariki ya 10 Ukuboza 2021, Um
-              <br></br>
-              bikorwa w’Akarere Bwana Ngabonziza Emmy yashikirije imiryango 2
-              <br></br>
-              ituye mu Kagari k’Akabahizi mu Murenge wa Gitega kuri ruhurura{" "}
-              <br></br>
-              Mpazi inzu za kijyambere zifite agaciro ka miliyoni 200 z’amafar
-              <br></br>
-              nga y’u Rwanda.{" "}
-            </p>
-          </div>
-        </div> */}
+        
       
         </div>
         </div>

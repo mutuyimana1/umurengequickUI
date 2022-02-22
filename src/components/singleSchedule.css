@@ -13,15 +13,16 @@
 .flexing {
   display: flex;
 }
-button {
+.button {
   border-radius: 10%;
   float: right;
   margin: 20px;
   background-color: rgba(48, 38, 182, 0.151);
   padding: auto;
+  height: auto;
   transition: 1s;
 }
-button:hover{
+.button:hover{
   transform: scale(1.3);
   background-color: rgb(200, 200, 211);
 }

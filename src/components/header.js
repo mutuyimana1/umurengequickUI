@@ -1,11 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
 import logo from "../assets/images/logo.png";
 import "./header.css";
+
 
 import { useNavigate } from "react-router-dom";
 import Signup from "./signup";
 import Signin from "./signin";
-import { useState } from "react";
+
 import "antd/dist/antd.css";
 import {
   Form,
@@ -13,6 +14,7 @@ import {
   Button,
   Checkbox,
   InputNumber,
+  Modal,
   Select,
   notification,
 } from "antd";
@@ -21,6 +23,8 @@ import umurengeApis from "../services/umurengeApis";
 
 const Header = () => {
   const navigate = useNavigate();
+  const [visible,setVisible]=useState(false)
+  const [visibleSignUp,setVisibleSignUp]=useState(false)
   const [buttonPopup, setButtonPopup] = useState(false);
   const [SignupPopup, setSignupPopup] = useState(false);
   const { Option } = Select;
@@ -107,7 +111,7 @@ const Header = () => {
               <a
                 href="#"
                 style={{ color: "rgb(255, 255, 255)" }}
-                onClick={() => setButtonPopup(true)}
+                onClick={() => setVisible(true)}
               >
                 Kwinjira
               </a>
@@ -115,7 +119,7 @@ const Header = () => {
               <a
                 href="#"
                 style={{ color: "rgb(255, 255, 255)" }}
-                onClick={() => setSignupPopup(true)}
+                onClick={() => setVisibleSignUp(true)}
               >
                 Kwiyandikisha
               </a>
@@ -133,7 +137,13 @@ const Header = () => {
             </div>
           </div>
         </main>
-        <Signin trigger={buttonPopup} setTrigger={setButtonPopup}>
+        <Modal 
+         visible={visible}
+         width="30%"
+         onOk={()=>setVisible(false)}
+         onCancel={()=>setVisible(false)}
+         footer={null}
+         >
           <Form
             name="normal_login"
             className="login-form"
@@ -143,6 +153,8 @@ const Header = () => {
             onFinish={onFinish}
           >
             <div style={{ marginTop: "40px" }}>
+              <h2 style={{fontSize:"20px",marginTop:"-10px",
+            textAlign:"center"}}>Injira</h2>
               <Form.Item
                 name="email"
                 rules={[
@@ -189,64 +201,71 @@ const Header = () => {
               </Form.Item>
 
               <Form.Item>
-                <Button
+                <Button style={{background:"rgb(5, 5, 95)", borderRadius:"10px", color:"white"}}
                  
-                  type="primary"
+                  // type="primary"
                   htmlType="submit"
                   className="login-form-button"
                 >
-                  Log in
-                </Button>
-                Or{" "}
-                <a
-                  href="#"
-                  style={{ color: "rgb(255, 255, 255)" }}
-                  onClick={() => setSignupPopup(true)}
-                >
-                  Iyandikije nonaha
-                </a>
+                  Ohereza
+                </Button > 
+                cyangwa{" "} <a href="#" onClick={() => setVisibleSignUp(true)} >iyandikishe </a> 
+               
               </Form.Item>
             </div>
           </Form>
-        </Signin>
-        <Signup trigger={SignupPopup} setTrigger={setSignupPopup}>
-          <Form {...layout} name="nest-messages" onFinish={onFinishSignUp}>
-            <Form.Item
+        </Modal>
+       
+      </div>
+      <Modal
+      visible={visibleSignUp}
+      width="35%"
+      onOk={()=>setVisibleSignUp(false)}
+      onCancel={()=>setVisibleSignUp(false)}
+      footer={null}
+      
+      >
+      <Form 
+      name="normal_login"
+      initialValues={{remember:true,}}
+      className="login-form">
+        <h1>Iyandikishe</h1>
+        <Form.Item style={{paddingTop:"15px",fontSize:"2px"}}
               name="firstName" 
-              label="firstName"
+              label="Izina rya mbere"
               rules={[
                 {
                   required: true,
                 },
               ]}
             >
-              <Input placeholder="first name"/>
+              <Input placeholder="first name" style={{marginLeft:"15px", width:"228px"}}/>
             </Form.Item>
-            <Form.Item
+        <Form.Item
               name="lastName"
-              label="lastName"
+              label="Iryakabiri"
               rules={[
                 {
                   required: true,
                 },
               ]}
             >
-              <Input  placeholder="enter last name"/>
+              <Input  placeholder="enter last name" style={{marginLeft:"60px", width:"228px"}}/>
             </Form.Item>
             <Form.Item
               name="email"
-              label="Email"
+              label="Imeli"
               rules={[
                 {
                   type: "email",
                 },
               ]}
             >
-              <Input placeholder="enter your email"/>
+              <Input placeholder="enter your email"  style={{marginLeft:"100px", width:"228px"}}/>
             </Form.Item>
             <Form.Item
               name="password"
-              label="Password"
+              label="Ijambo ryibanga"
               rules={[
                 {
                   required: true,
@@ -254,25 +273,25 @@ const Header = () => {
                 },
               ]}
             >
-              <Input
+              <Input  style={{marginLeft:"20px"}}
                 prefix={<LockOutlined className="site-form-item-icon" />}
                 type="password"
-                placeholder="Password"
+                placeholder="Password" style={{marginLeft:"15px", width:"220px"}}
               />
             </Form.Item>
-            <Form.Item name="address" label="address">
-              <Input placeholder="enter your address"/>
+            <Form.Item name="address" label="Address">
+              <Input placeholder="enter your address"  style={{marginLeft:"80px", width:"208px"}}/>
             </Form.Item>
-            <Form.Item name="Identification_card" label="Identification-card">
-              <Input placeholder="enter your ID"/>
+            <Form.Item name="Identification_card" label="Irangamuntu">
+              <Input placeholder="enter your ID" style={{marginLeft:"47px", width:"227px"}}/>
             </Form.Item>
-            <Form.Item name="phone_number" label="phone-number">
-              <Input placeholder="enter your phone"/>
+            <Form.Item name="phone_number" label="Telephone">
+              <Input placeholder="telephone"  style={{marginLeft:"70px", width:"220px"}}/>
             </Form.Item>
 
             <Form.Item
               name="gender"
-              label="Gender"
+              label="Igitsina"
               rules={[
                 {
                   required: true,
@@ -280,7 +299,7 @@ const Header = () => {
                 },
               ]}
             >
-              <Select placeholder="select your gender">
+              <Select placeholder="select your gender"  style={{marginLeft:"85px", width:"200px"}}>
                 <Option value="male">Male</Option>
                 <Option value="female">Female</Option>
                 <Option value="other">Other</Option>
@@ -288,11 +307,11 @@ const Header = () => {
               </Select>
             </Form.Item>
       
-            <Form.Item name="Role" label="Role"> 
-            {/* removed braces holding "role", the name */}
+            <Form.Item name="Role" label="Icyushinzwe"> 
+            
               <Select
                 showSearch
-                placeholder="Select your Role"
+                placeholder="Select your Role"  style={{marginLeft:"64px", width:"200px"}}
                 optionFilterProp="children"
                 onChange={onChange}
                 onSearch={onSearch}
@@ -306,17 +325,21 @@ const Header = () => {
                 <Option value="User">User</Option>
               </Select>
             </Form.Item>
-            <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-              <Button
-                htmlType="submit"
-                style={{ background: "rgb(22, 138, 158)", color: "white" }}
-              >
-                Submit
-              </Button>
-            </Form.Item>
-          </Form>
-        </Signup>
-      </div>
+        <Button 
+        // type="primary"
+        style={{background:"rgb(5, 5, 95)", borderRadius:"10px", color:"white", marginLeft:"300px"}}
+        htmlType="submit"
+        className="login-form-button"
+        
+        >Ohereza
+
+        </Button>
+      
+      </Form>
+
+      </Modal>
+  
+
     </>
   );
 };

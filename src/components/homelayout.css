@@ -5,9 +5,11 @@
 }
 
 .homeLayout{
-    /* background-image: url("../assets/images/teamWork2.jpg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-image:url("../assets/images/women.jpg");
+
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
 }
