@@ -29,5 +29,5 @@ animation: cssmarquee 10s linear infinite;
 }
 .summary{
     height: 30vh;
-    /* margin-bottom: 100px; */
+    margin-bottom: 10px;
 }

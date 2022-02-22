@@ -1,6 +1,6 @@
 .home-container{
     text-align: center;
-    color:white;
+    color:black;
     padding-left: 40px;
     padding-top: 50px;
     text-decoration: bold;
@@ -12,7 +12,7 @@
     margin-left: 100px;
 }
 .contactContainer{
-    background-image: url(../assets/images/women.jpg);
+    /* background-image: url(../assets/images/women.jpg); */
 }
 .secondContainer{
     background-color: aqua;
@@ -25,7 +25,7 @@
     align-content:flex-end;
     height: auto;
     /* margin-left: 78px; */
-   background-color: rgba(22, 138, 158, 0.698);
+   background-color: rgba(255, 255, 255, 0.513);
    margin-top: -30px;
    
 }
@@ -67,7 +67,7 @@
 }
 .icons{
     display: flex;
-    margin-left: 220px;
+    margin-left: 120px;
     /* margin-top: 50px; */
     padding-top: 60px;
 }
@@ -78,7 +78,7 @@
     margin-left: 10px;
 }
 .icon2 h{
-    color:rgb(22, 138, 158);
+    color:rgb(5, 5, 95);
 }
 .icon2 p2{
     color:rgb(22, 138, 158);

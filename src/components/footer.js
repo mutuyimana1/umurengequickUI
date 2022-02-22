@@ -83,7 +83,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="footer-side-5">
-            <h2>Contact Us</h2>
+            <h2 style={{color:"black"}}>Contact Us</h2>
             <TextField
               id="standard-basic"
               label="your email"
@@ -95,11 +95,12 @@ const Footer = () => {
               id="filled-basic"
               label="telephone"
               variant="filled"
-              color="warning"
+              color="success"
               fullWidth
               style={{ margin: "20px 20px 20px 0", width: "200px", fontSize:"500px"}}
             />
             <TextField id="outlined-basic" label="Message" variant="outlined"color="success" />
+            <button style={{background:"rgb(2, 2, 36)", marginTop:"5px",borderRadius:"5px",marginLeft:"60px"}}>Ohereza</button>
           </div>
         </div>
 
