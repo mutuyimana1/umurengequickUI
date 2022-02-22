@@ -8,14 +8,14 @@ const Schedule=()=>{
    
          return(
              <HomeLayout>
-                 <div className="bg-image">
-            <h1 >Abayobozi bacu</h1>
+                 
+            <h1 style={{"fontSize":"x-large", "fontFamily":"inherit"}}>Abayobozi bacu</h1>
             <div className="schedule-container">
                 {                    
                     leadersInfos.map((data)=>(<SingleSchedule leader={data} />))
                 }
             </div>
-            </div>
+            
             </HomeLayout>
         )
     

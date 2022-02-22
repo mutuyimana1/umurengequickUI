@@ -24,9 +24,9 @@ const PlannerLayout = () => {
       <TabPane tab="booking" key="2">
         <UserForm />
       </TabPane>
-      <TabPane tab="Number 3" key="3">
+      {/* <TabPane tab="Number 3" key="3">
         
-      </TabPane>
+      </TabPane> */}
     </Tabs>
   )
 }

@@ -19,7 +19,7 @@ const SingleSchedule = ({ leader }) => {
       <Drawer
         placement="right"
         visible={DrawerVisible}
-        width={500}
+        width={600}
         onClose={() => closedrawerVisible()}
       >
         <PlannerLayout leader={leader} />
@@ -27,31 +27,24 @@ const SingleSchedule = ({ leader }) => {
 
       <div className="leaders-card">
         <div className="profile">
-            <div style={{ height:"1000px",overflow:"hidden"}}>
-          <img src={leader?.profile} width="fit-content"></img>
-
-            </div>
-          <div style={{width:"75%", paddingLeft:"20px"}}>
-            <h5>
+          <div style={{  "height":"42vh",  "paddingRight":"30vh", "paddingLeft":"-30vh",  "overflow":"hidden" }}>
+            <img src={leader?.profile}  ></img>
+          </div>
+          <div className="amagambo">
+            <h5 >
               <b> {leader?.title}</b>
             </h5>
-
             <h5>Amazina : {leader?.name}</h5>
-
-            <h5>numero ya telephone:{leader?.phone}</h5>
-            <h5>Akazi: {leader?.description}</h5>
-        {/* <div onClose={() => closedrawerVisible()} className="leaders-button"> */}
-          <button onClick={() => handleclickDrawerVisible()} >
-            {" "}
-            Hitamo umunsi
-          </button>
+            <h5>Numero ya telephone:{leader?.phone}</h5>
+            <h5>Akazi: {leader?.description}</h5> 
+            <div onClose={()=> closedrawerVisible()}>           
+            <button onClick={() => handleclickDrawerVisible()} >
+              Hitamo umunsi
+            </button>
+            </div>
           </div>
-        </div>
-        
-       
-        {/* </div> */}
-      </div>
-      {/* </div> */}
+        </div>        
+      </div>      
     </>
   );
 };

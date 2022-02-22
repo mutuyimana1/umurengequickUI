@@ -18,51 +18,87 @@ const { SubMenu } = Menu;
 const menu = (
   <Menu>
     <Menu.ItemGroup title="Iki cyumweru (14/02 - 20/02)">
-      
-      <SubMenu title="Kuwa mbere">
-      <Menu.Item disabled>
-        <p>8:00 - 9:00</p>
-        <p>Inama y'umunsi</p>
-      </Menu.Item>
-      <Menu.Item>
-      <p>9:00 - 12:00</p>
-      <p>Kwakira Abaturage</p>
-      <Button onClick={() => openNotificationWithIcon('success')}>Mpisemo</Button>
 
+      {/* <SubMenu title="Kuwa mbere"> */}
+        <Menu.Item><b> kuwa mbere</b>
+           <div style={{"display":"flex"}}>    
+        <Menu.Item>
+          <p>9:00 - 12:00</p>
+          <p>Kwakira Abaturage</p>
+          <p>Available seats: 5/10</p>
+          <Button onClick={() => openNotificationWithIcon('success')}>Mpisemo</Button>
+        </Menu.Item>
+        <Menu.Item>
+          <p>13:00 - 15:00</p>
+          <p>Kwakira Abaturage</p>
+          <p>Available seats: 7/10</p>
+          <Button onClick={() => openNotificationWithIcon('success')}>Mpisemo</Button>
+        </Menu.Item>
+        </div> 
+        </Menu.Item>
+      {/* </SubMenu> */}
+
+      <Menu.Item><b>Kuwa Kabiri</b>
+        <div style={{"display":"flex"}}>
+      <Menu.Item>
+          <p>9:00 - 12:00</p>
+          <p>Kwakira Abaturage</p>
+          <p>Available seats: 5/10</p>
+          <Button onClick={() => openNotificationWithIcon('success')}>Mpisemo</Button>
+        </Menu.Item><Menu.Item>
+          <p>9:00 - 12:00</p>
+          <p>Kwakira Abaturage</p>
+          <p>Available seats: 5/10</p>
+          <Button onClick={() => openNotificationWithIcon('success')}>Mpisemo</Button>
+        </Menu.Item>
+        <Menu.Item>
+          <p>9:00 - 12:00</p>
+          <p>Kwakira Abaturage</p>
+          <p>Available seats: 5/10</p>
+          <Button onClick={() => openNotificationWithIcon('success')}>Mpisemo</Button>
+        </Menu.Item>
+        </div>
       </Menu.Item>
-    </SubMenu>
-      <Menu.Item>Kuwa Kabiri</Menu.Item>
-      <Menu.Item>Kuwa Gatatu</Menu.Item>
-      <Menu.Item>Kuwa Kane</Menu.Item>
-      
+      <Menu.Item><b>Kuwa Gatatu</b>
+      <div style={{"display":"flex"}}>
+        
+      <Menu.Item>
+          <p>9:00 - 12:00</p>
+          <p>Kwakira Abaturage</p>
+          <p>Available seats: 5/10</p>
+          <Button onClick={() => openNotificationWithIcon('success')}>Mpisemo</Button>
+        </Menu.Item> <Menu.Item>
+          <p>9:00 - 12:00</p>
+          <p>Kwakira Abaturage</p>
+          <p>Available seats: 5/10</p>
+          <Button onClick={() => openNotificationWithIcon('success')}>Mpisemo</Button>
+        </Menu.Item> <Menu.Item>
+          <p>9:00 - 12:00</p>
+          <p>Kwakira Abaturage</p>
+          <p>Available seats: 5/10</p>
+          <Button onClick={() => openNotificationWithIcon('success')}>Mpisemo</Button>
+        </Menu.Item>
+        </div>
+      </Menu.Item>
+      <Menu.Item><b>Kuwa Kane</b></Menu.Item>
+
 
     </Menu.ItemGroup>
-    <SubMenu title="sub menu">
-      <Menu.Item disabled>
-        <p>8:00 - 9:00</p>
-        <p>Inama y'umunsi</p>
-      </Menu.Item>
-      <Menu.Item>
-      <p>9:00 - 12:00</p>
-      <p>Kwakira Abaturage</p>
-      <p>Available seats: 5/10</p>
 
-      </Menu.Item>
-    </SubMenu>
-    <SubMenu title="Kuwa Gatandatu" disabled>
-      <Menu.Item>5d menu item</Menu.Item>
-      <Menu.Item>6th menu item</Menu.Item>
-    </SubMenu>
+    
   </Menu>
 );
 
-const Days=()=>{
-  return(
-  <Dropdown overlay={menu}>
-    <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
-      Kanda hano maze uhitemo <DownOutlined />
-    </a>
-  </Dropdown>
-   )
-  }
-  export default Days;
+const Days = () => {
+  return (
+    <>
+      <Dropdown overlay={menu}>
+        <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+          Kanda hano maze uhitemo <DownOutlined />
+        </a>
+      </Dropdown>
+     
+    </>
+  )
+}
+export default Days;
