@@ -98,10 +98,12 @@ const Header = () => {
             <h2>We Starve To Serve</h2>
             {/* <div ClassName="navbar"> */}
             <div ClassName="navbar-fix">
+              <div className="bar">
               <a href="/schedule" style={{ color: "rgb(255, 255, 255)" }}>
                 {" "}
                 Kora Gahunda
               </a>
+              </div>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="/contactUs" style={{ color: "rgb(255, 255, 255)" }}>
                 {" "}
@@ -118,7 +120,7 @@ const Header = () => {
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a
                 href="#"
-                style={{ color: "rgb(255, 255, 255)" }}
+                style={{ color: "rgb(255, 255, 255)", }}
                 onClick={() => setVisibleSignUp(true)}
               >
                 Kwiyandikisha
